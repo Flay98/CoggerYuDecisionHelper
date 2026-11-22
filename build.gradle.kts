@@ -19,6 +19,7 @@ sourceSets {
 }
 
 dependencies {
+    implementation(files("lib/gson-2.13.2.jar"))
     // JAMA is already included as Java sources in src/Jama.
     testImplementation(files("lib/junit-4.13.1.jar", "lib/hamcrest-core-1.3.jar"))
 }
@@ -42,5 +43,17 @@ tasks.test {
 tasks.named<JavaExec>("run") {
     // Gradle otherwise supplies an empty input stream to the console application.
     standardInput = System.`in`
+    systemProperty("file.encoding", "UTF-8")
+}
+
+tasks.register<JavaExec>("runConsistency") {
+    group = "application"
+    description = "Analyze and correct a pairwise comparison matrix from CSV or JSON"
+    dependsOn(tasks.classes)
+    classpath = sourceSets["main"].runtimeClasspath
+    mainClass = "MCD.consistency.cli.ConsistencyCli"
+    javaLauncher = javaToolchains.launcherFor {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
     systemProperty("file.encoding", "UTF-8")
 }
