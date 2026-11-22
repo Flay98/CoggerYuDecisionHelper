@@ -1,0 +1,7 @@
+# Gradle caches and generated build output
+.gradle/
+build/
+
+# Legacy compiler output (already tracked files are intentionally retained)
+out/
+*.class
