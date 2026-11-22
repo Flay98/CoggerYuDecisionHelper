@@ -239,7 +239,8 @@ def write_paired(summary, inputs, units):
             row[field + '_BminusU'] = float(bi[field]) - float(upper[field])
         paired.append(row)
     with (summary / 'paired_modes.csv').open('w', encoding='utf-8', newline='') as handle:
-        writer = csv.DictWriter(handle, fieldnames=list(paired[0])); writer.writeheader(); writer.writerows(paired)
+        # Explicit LF prevents regenerated CSV rows from failing git diff --check on Ubuntu.
+        writer = csv.DictWriter(handle, fieldnames=list(paired[0]), lineterminator='\n'); writer.writeheader(); writer.writerows(paired)
     (summary / 'paired_modes.json').write_text(json.dumps({'schemaVersion': 1, 'rows': paired}, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
 
 

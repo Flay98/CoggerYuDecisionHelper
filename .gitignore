@@ -19,3 +19,8 @@ __pycache__/
 # Local copies of scientific articles
 /ipmp2555.pdf
 /1-s2.0-S0888613X26000022-main.pdf
+
+# Editor/temporary files
+*.tmp
+*.swp
+*~

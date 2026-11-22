@@ -7,7 +7,7 @@
   "expectedRuns": 12,
   "completedRuns": 12,
   "warmupRuns": 3,
-  "wallSeconds": 0.159041987,
+  "wallSeconds": 0.177680203,
   "maxOutputBytes": 536870912,
   "environment": {
     "javaVersion": "17.0.21.0.3",

@@ -114,3 +114,13 @@ tasks.register<JavaExec>("verifyComparison") {
     args("REPORT")
     maxHeapSize = "512m"
 }
+
+tasks.register<JavaExec>("runDecision") {
+    group = "application"
+    description = "Compare alternative rankings before and after three independent PCM corrections"
+    dependsOn(tasks.classes)
+    classpath = sourceSets["main"].runtimeClasspath
+    mainClass = "MCD.consistency.decision.DecisionCli"
+    maxHeapSize = "512m"
+    systemProperty("file.encoding", "UTF-8")
+}

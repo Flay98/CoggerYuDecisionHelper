@@ -10,7 +10,7 @@
       "meanFinalK_BminusU": -0.29460335806400867,
       "meanChangedComparisons_BminusU": -2.0,
       "meanLogDeviation_BminusU": 0.32765344834118054,
-      "meanElapsedMillis_BminusU": -0.8751519999999999,
+      "meanElapsedMillis_BminusU": -0.8432750000000001,
       "ownSuccessRate_BminusU": 1.0,
       "bothAcceptableRate_BminusU": 1.0
     },
@@ -23,7 +23,7 @@
       "meanFinalK_BminusU": 0.0,
       "meanChangedComparisons_BminusU": 0.0,
       "meanLogDeviation_BminusU": 0.0,
-      "meanElapsedMillis_BminusU": 0.014638000000000005,
+      "meanElapsedMillis_BminusU": 0.008473000000000001,
       "ownSuccessRate_BminusU": 0.0,
       "bothAcceptableRate_BminusU": 0.0
     },
@@ -36,7 +36,7 @@
       "meanFinalK_BminusU": -0.023146816662782843,
       "meanChangedComparisons_BminusU": 3.0,
       "meanLogDeviation_BminusU": -0.07082342978930456,
-      "meanElapsedMillis_BminusU": 1.095308,
+      "meanElapsedMillis_BminusU": 0.9445239999999999,
       "ownSuccessRate_BminusU": 0.0,
       "bothAcceptableRate_BminusU": 0.0
     },
@@ -49,7 +49,7 @@
       "meanFinalK_BminusU": -0.0029538815332345036,
       "meanChangedComparisons_BminusU": 2.0,
       "meanLogDeviation_BminusU": 0.01983340765201147,
-      "meanElapsedMillis_BminusU": -0.19793700000000003,
+      "meanElapsedMillis_BminusU": -0.2240390000000001,
       "ownSuccessRate_BminusU": 0.0,
       "bothAcceptableRate_BminusU": 0.0
     }

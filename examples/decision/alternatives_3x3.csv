@@ -1,0 +1,4 @@
+alternative,speed,cost,accuracy
+A,90,120,0.82
+B,70,75,0.90
+C,60,60,0.95

@@ -5,7 +5,6 @@ import MCD.consistency.GeneticCorrectionOptions;
 import MCD.consistency.GeneticMutationMode;
 
 import java.nio.file.Path;
-import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Set;
 import java.util.Locale;
@@ -20,37 +19,16 @@ public record CliArguments(Path input, Path outputDirectory, Method method,
 
     public enum Method { COSINE, GENETIC, BOTH }
 
+    /** Names delegated by integration CLIs; this remains the single mathematical option parser. */
+    public static Set<String> correctionOptionNames() {
+        return VALUE_OPTIONS.stream().filter(key -> !Set.of("--input", "--method", "--output-dir", "--mutation-mode").contains(key))
+                .collect(java.util.stream.Collectors.toUnmodifiableSet());
+    }
+
     public static CliArguments parse(String[] args) {
-        Map<String, String> values = new LinkedHashMap<>();
-        boolean help = args.length == 0;
-        for (int i = 0; i < args.length; i++) {
-            String token = args[i];
-            if (token.equals("--help")) {
-                help = true;
-                continue;
-            }
-            int equals = token.indexOf('=');
-            String key = equals < 0 ? token : token.substring(0, equals);
-            if (!VALUE_OPTIONS.contains(key)) {
-                throw new IllegalArgumentException("Unknown argument: " + token);
-            }
-            if (values.containsKey(key)) {
-                throw new IllegalArgumentException("Duplicate argument: " + key);
-            }
-            String value;
-            if (equals >= 0) {
-                value = token.substring(equals + 1);
-            } else {
-                if (i + 1 >= args.length || args[i + 1].startsWith("--")) {
-                    throw new IllegalArgumentException("Missing value for " + key);
-                }
-                value = args[++i];
-            }
-            if (value.isBlank()) {
-                throw new IllegalArgumentException("Empty value for " + key);
-            }
-            values.put(key, value);
-        }
+        var parsed = CliOptions.parse(args, VALUE_OPTIONS);
+        Map<String, String> values = parsed.values();
+        boolean help = parsed.help();
         if (!help && !values.containsKey("--input")) {
             throw new IllegalArgumentException("Required argument: --input <matrix.csv|matrix.json>");
         }
