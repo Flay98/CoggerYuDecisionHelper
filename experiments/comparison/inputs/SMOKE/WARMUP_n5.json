@@ -1,0 +1,23 @@
+{
+  "profile": "SMOKE",
+  "caseId": "WARMUP_n5",
+  "type": "DISCRETE_EXPERT",
+  "size": 5,
+  "sample": 65535,
+  "masterSeed": 20261123,
+  "generationSeed": -4384974964921106154,
+  "generatorVersion": "matrix-generator-v1",
+  "parameters": {
+    "perturbationFraction": 0.4,
+    "weightRatioBound": 3.0,
+    "noiseLogBound": 1.0986122886681098,
+    "proposalAttempts": 64
+  },
+  "inputFile": "inputs/SMOKE/WARMUP_n5.csv",
+  "sha256": "8c7c0a088e5965ce6efda8c68905b10628c5fb55a086eeb67487bfa08d7ee041",
+  "initialCi": 1.4966230179616455,
+  "initialK": 0.9955357142857143,
+  "initialCategory": "BOTH_VIOLATED",
+  "latentWeights": [],
+  "perturbations": []
+}

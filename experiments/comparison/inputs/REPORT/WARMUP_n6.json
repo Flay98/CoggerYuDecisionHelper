@@ -1,0 +1,23 @@
+{
+  "profile": "REPORT",
+  "caseId": "WARMUP_n6",
+  "type": "DISCRETE_EXPERT",
+  "size": 6,
+  "sample": 65535,
+  "masterSeed": 20261123,
+  "generationSeed": -1568737407993781887,
+  "generatorVersion": "matrix-generator-v1",
+  "parameters": {
+    "perturbationFraction": 0.4,
+    "weightRatioBound": 3.0,
+    "noiseLogBound": 1.0986122886681098,
+    "proposalAttempts": 64
+  },
+  "inputFile": "inputs/REPORT/WARMUP_n6.csv",
+  "sha256": "3cb9e8ed1ac9f1c3c65aaf8b51a8c6fbe6ffa2368e91b419f17b26352995f12a",
+  "initialCi": 1.588692033301248,
+  "initialK": 0.9979423868312757,
+  "initialCategory": "BOTH_VIOLATED",
+  "latentWeights": [],
+  "perturbations": []
+}

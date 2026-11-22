@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "pilotWallSeconds": 4.404680995,
+  "pilotRuns": 18,
+  "reportInputs": 64,
+  "reportRuns": 448,
+  "maximumObservedMillis": {
+    "COSINE": 84.033514,
+    "GA_UPPER_ONLY": 974.313507,
+    "GA_BIDIRECTIONAL": 959.734884
+  },
+  "conservativeProjectedSeconds": 972.6861036871109,
+  "projectedOutputBytes": 22989269,
+  "reportBudgetSeconds": 1800,
+  "initialReportFileSha256": "f017d763f4303a966c4a3cf6bcec7c361985ce05251baf96e6048dbaeff33e17",
+  "finalReportFileSha256": "f017d763f4303a966c4a3cf6bcec7c361985ce05251baf96e6048dbaeff33e17"
+}

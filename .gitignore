@@ -5,3 +5,17 @@ build/
 # Legacy compiler output (already tracked files are intentionally retained)
 out/
 *.class
+
+# Isolated plotting dependencies and Python caches
+experiments/comparison/.venv/
+__pycache__/
+
+# Generated comparison experiment results
+/experiments/comparison/outputs/
+
+# Preliminary figures
+/experiments/comparison/figures/SMOKE/
+
+# Local copies of scientific articles
+/ipmp2555.pdf
+/1-s2.0-S0888613X26000022-main.pdf

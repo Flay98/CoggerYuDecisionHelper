@@ -1,0 +1,23 @@
+{
+  "profile": "SMOKE",
+  "caseId": "A_n03_m000",
+  "type": "DISCRETE_EXPERT",
+  "size": 3,
+  "sample": 0,
+  "masterSeed": 20261123,
+  "generationSeed": -4414559455834325694,
+  "generatorVersion": "matrix-generator-v1",
+  "parameters": {
+    "perturbationFraction": 0.4,
+    "weightRatioBound": 3.0,
+    "noiseLogBound": 1.0986122886681098,
+    "proposalAttempts": 64
+  },
+  "inputFile": "inputs/SMOKE/A_n03_m000.csv",
+  "sha256": "d0c87a2054ee39142d02b9619a05567fad471d1cd23dbdfc86e514e4cc07834f",
+  "initialCi": 0.08846412097309053,
+  "initialK": 0.7142857142857143,
+  "initialCategory": "K_ONLY_VIOLATION",
+  "latentWeights": [],
+  "perturbations": []
+}

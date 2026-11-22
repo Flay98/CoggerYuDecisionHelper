@@ -1,0 +1,53 @@
+{
+  "profile": "REPORT",
+  "caseId": "B_n04_m003",
+  "type": "PERTURBED_CONSISTENT",
+  "size": 4,
+  "sample": 3,
+  "masterSeed": 20261123,
+  "generationSeed": 2624881404475302021,
+  "generatorVersion": "matrix-generator-v1",
+  "parameters": {
+    "perturbationFraction": 0.4,
+    "weightRatioBound": 3.0,
+    "noiseLogBound": 1.0986122886681098,
+    "proposalAttempts": 64
+  },
+  "inputFile": "inputs/REPORT/B_n04_m003.csv",
+  "sha256": "1eab022e1cd8d8308175dc10f78c6feb40d9c4d3aa80965cc95b5ab1fe1c324f",
+  "initialCi": 0.1430817061470823,
+  "initialK": 0.8652458559384864,
+  "initialCategory": "BOTH_VIOLATED",
+  "latentWeights": [
+    2.7803168567481755,
+    1.2880739789252542,
+    1.102732838394253,
+    2.3714266776336945
+  ],
+  "perturbations": [
+    {
+      "i": 0,
+      "j": 2,
+      "epsilon": -0.9337693356870231,
+      "before": 2.5212968725922233,
+      "after": 0.9910444077960006,
+      "attempts": 1
+    },
+    {
+      "i": 0,
+      "j": 3,
+      "epsilon": 0.19832609048093083,
+      "before": 1.1724237072016446,
+      "after": 1.4296065137790372,
+      "attempts": 1
+    },
+    {
+      "i": 1,
+      "j": 2,
+      "epsilon": 1.070533980275638,
+      "before": 1.1680743821875172,
+      "after": 3.4071989996694976,
+      "attempts": 1
+    }
+  ]
+}

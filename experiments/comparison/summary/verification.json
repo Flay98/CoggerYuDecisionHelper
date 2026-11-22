@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "junit": {
+    "tests": 166,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "profiles": {
+    "SMOKE": {
+      "planSha256": "2e5cf67205450aa1137dab05dd7a003ce83285fa4a31a70669f029eab0bf49b8",
+      "expectedInputs": 4,
+      "expectedRuns": 12,
+      "completedRuns": 12,
+      "warmupRuns": 3,
+      "wallSeconds": 0.159041987
+    },
+    "PILOT": {
+      "planSha256": "99a53e5376d181b7537c1f889102ef7691e6a617a92e266158eafd1c41ed7a27",
+      "expectedInputs": 6,
+      "expectedRuns": 18,
+      "completedRuns": 18,
+      "warmupRuns": 6,
+      "wallSeconds": 4.404680995
+    },
+    "REPORT": {
+      "planSha256": "6f0e459b73e5c8246cefa30674e1d9f84b6fef64d75638f50e616bab263c0cfe",
+      "expectedInputs": 64,
+      "expectedRuns": 448,
+      "completedRuns": 448,
+      "warmupRuns": 6,
+      "wallSeconds": 86.345810966
+    }
+  },
+  "savedResults": 493,
+  "checkedCommands": [
+    {
+      "command": "./gradlew clean build",
+      "result": "BUILD SUCCESSFUL"
+    },
+    {
+      "command": "./gradlew reproduceArticles",
+      "result": "BUILD SUCCESSFUL"
+    },
+    {
+      "command": "./gradlew benchmarkSmoke",
+      "result": "BUILD SUCCESSFUL"
+    },
+    {
+      "command": "./gradlew benchmarkPilot",
+      "result": "BUILD SUCCESSFUL"
+    },
+    {
+      "command": "./gradlew benchmarkReport",
+      "result": "BUILD SUCCESSFUL"
+    },
+    {
+      "command": "./gradlew plotReport",
+      "result": "BUILD SUCCESSFUL"
+    },
+    {
+      "command": "./gradlew verifyComparison",
+      "result": "BUILD SUCCESSFUL"
+    },
+    {
+      "command": "./gradlew verifyComparison --args=\"PILOT\"",
+      "result": "BUILD SUCCESSFUL"
+    },
+    {
+      "command": "./gradlew verifyComparison --args=\"SMOKE\" plotSmoke",
+      "result": "BUILD SUCCESSFUL"
+    }
+  ],
+  "reproduction": {
+    "mathematicalResultsMatchArchived": true,
+    "scientificReferencesUnchanged": true,
+    "timingOnlyRerunChangesRestoredToPreserveStage5Archive": true
+  },
+  "fullExecuted": false,
+  "figures": {
+    "REPORT": 16,
+    "SMOKE": 14,
+    "formats": [
+      "PNG 300 DPI",
+      "SVG"
+    ]
+  },
+  "allSavedProfilesAudited": true,
+  "archivedResultsAudited": 493
+}

@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "profile": "REPORT",
+  "planSha256": "6f0e459b73e5c8246cefa30674e1d9f84b6fef64d75638f50e616bab263c0cfe",
+  "sourceSha256": {
+    "summary/REPORT/runs.csv": "a04c146021d6b5960c2e6bf86729c2272aba58077ad2c93d09e73b641abfa729",
+    "summary/REPORT/inputs.csv": "37a930e9f8b8d0c9d2baa6aefb23ee3123adeda2c1b8419935b45042d241dced",
+    "summary/REPORT/aggregated.csv": "2c125a4237d28793f402ab2c9c203653dd5bcb20e537c184aa7b7d80f4bcb025",
+    "summary/REPORT/per_matrix.csv": "673bf31669db968417af8d61706099254dd0cf6f471bdfab0781dff88fb9a550"
+  },
+  "matplotlibVersion": "3.10.8",
+  "numpyVersion": "2.3.5",
+  "figures": [
+    {
+      "name": "01_final_ci_A",
+      "png": "figures/REPORT/01_final_ci_A.png",
+      "svg": "figures/REPORT/01_final_ci_A.svg",
+      "sources": [
+        "summary/REPORT/aggregated.csv"
+      ],
+      "note": "Среднее по матрицам после усреднения seed внутри матрицы"
+    },
+    {
+      "name": "02_final_k_A",
+      "png": "figures/REPORT/02_final_k_A.png",
+      "svg": "figures/REPORT/02_final_k_A.svg",
+      "sources": [
+        "summary/REPORT/aggregated.csv"
+      ],
+      "note": "Среднее по матрицам после усреднения seed внутри матрицы"
+    },
+    {
+      "name": "04_time_A",
+      "png": "figures/REPORT/04_time_A.png",
+      "svg": "figures/REPORT/04_time_A.svg",
+      "sources": [
+        "summary/REPORT/aggregated.csv"
+      ],
+      "note": "Среднее по матрицам после усреднения seed внутри матрицы"
+    },
+    {
+      "name": "05_changed_A",
+      "png": "figures/REPORT/05_changed_A.png",
+      "svg": "figures/REPORT/05_changed_A.svg",
+      "sources": [
+        "summary/REPORT/aggregated.csv"
+      ],
+      "note": "Среднее по матрицам после усреднения seed внутри матрицы"
+    },
+    {
+      "name": "06_deviation_A",
+      "png": "figures/REPORT/06_deviation_A.png",
+      "svg": "figures/REPORT/06_deviation_A.svg",
+      "sources": [
+        "summary/REPORT/aggregated.csv"
+      ],
+      "note": "Среднее по матрицам после усреднения seed внутри матрицы"
+    },
+    {
+      "name": "03_success_A",
+      "png": "figures/REPORT/03_success_A.png",
+      "svg": "figures/REPORT/03_success_A.svg",
+      "sources": [
+        "summary/REPORT/aggregated.csv"
+      ],
+      "note": "ALREADY_ACCEPTABLE включён в собственный успех"
+    },
+    {
+      "name": "08_k_distribution_A",
+      "png": "figures/REPORT/08_k_distribution_A.png",
+      "svg": "figures/REPORT/08_k_distribution_A.svg",
+      "sources": [
+        "summary/REPORT/per_matrix.csv"
+      ],
+      "note": "Точки — независимые матрицы; повторы seed не считаются новыми матрицами"
+    },
+    {
+      "name": "01_final_ci_B",
+      "png": "figures/REPORT/01_final_ci_B.png",
+      "svg": "figures/REPORT/01_final_ci_B.svg",
+      "sources": [
+        "summary/REPORT/aggregated.csv"
+      ],
+      "note": "Среднее по матрицам после усреднения seed внутри матрицы"
+    },
+    {
+      "name": "02_final_k_B",
+      "png": "figures/REPORT/02_final_k_B.png",
+      "svg": "figures/REPORT/02_final_k_B.svg",
+      "sources": [
+        "summary/REPORT/aggregated.csv"
+      ],
+      "note": "Среднее по матрицам после усреднения seed внутри матрицы"
+    },
+    {
+      "name": "04_time_B",
+      "png": "figures/REPORT/04_time_B.png",
+      "svg": "figures/REPORT/04_time_B.svg",
+      "sources": [
+        "summary/REPORT/aggregated.csv"
+      ],
+      "note": "Среднее по матрицам после усреднения seed внутри матрицы"
+    },
+    {
+      "name": "05_changed_B",
+      "png": "figures/REPORT/05_changed_B.png",
+      "svg": "figures/REPORT/05_changed_B.svg",
+      "sources": [
+        "summary/REPORT/aggregated.csv"
+      ],
+      "note": "Среднее по матрицам после усреднения seed внутри матрицы"
+    },
+    {
+      "name": "06_deviation_B",
+      "png": "figures/REPORT/06_deviation_B.png",
+      "svg": "figures/REPORT/06_deviation_B.svg",
+      "sources": [
+        "summary/REPORT/aggregated.csv"
+      ],
+      "note": "Среднее по матрицам после усреднения seed внутри матрицы"
+    },
+    {
+      "name": "03_success_B",
+      "png": "figures/REPORT/03_success_B.png",
+      "svg": "figures/REPORT/03_success_B.svg",
+      "sources": [
+        "summary/REPORT/aggregated.csv"
+      ],
+      "note": "ALREADY_ACCEPTABLE включён в собственный успех"
+    },
+    {
+      "name": "08_k_distribution_B",
+      "png": "figures/REPORT/08_k_distribution_B.png",
+      "svg": "figures/REPORT/08_k_distribution_B.svg",
+      "sources": [
+        "summary/REPORT/per_matrix.csv"
+      ],
+      "note": "Точки — независимые матрицы; повторы seed не считаются новыми матрицами"
+    },
+    {
+      "name": "07_ga_history",
+      "png": "figures/REPORT/07_ga_history.png",
+      "svg": "figures/REPORT/07_ga_history.svg",
+      "sources": [
+        "outputs/REPORT/6f0e459b73e5c824/REPORT_A_n06_m000_GA_UPPER_ONLY_seed42/result.json",
+        "outputs/REPORT/6f0e459b73e5c824/REPORT_A_n06_m000_GA_BIDIRECTIONAL_seed42/result.json"
+      ],
+      "note": "Матрица и seed заданы до выполнения эксперимента"
+    },
+    {
+      "name": "09_initial_distribution",
+      "png": "figures/REPORT/09_initial_distribution.png",
+      "svg": "figures/REPORT/09_initial_distribution.svg",
+      "sources": [
+        "summary/REPORT/inputs.csv"
+      ],
+      "note": "Каждая точка — одна исходная матрица"
+    }
+  ],
+  "skipped": []
+}

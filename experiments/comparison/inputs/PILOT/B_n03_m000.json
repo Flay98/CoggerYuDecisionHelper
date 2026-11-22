@@ -1,0 +1,44 @@
+{
+  "profile": "PILOT",
+  "caseId": "B_n03_m000",
+  "type": "PERTURBED_CONSISTENT",
+  "size": 3,
+  "sample": 0,
+  "masterSeed": 20261123,
+  "generationSeed": 4696353410561141529,
+  "generatorVersion": "matrix-generator-v1",
+  "parameters": {
+    "perturbationFraction": 0.4,
+    "weightRatioBound": 3.0,
+    "noiseLogBound": 1.0986122886681098,
+    "proposalAttempts": 64
+  },
+  "inputFile": "inputs/PILOT/B_n03_m000.csv",
+  "sha256": "bc58366aaa6af8cd44c7ee4fbb29eda6a0b82245d044ea20382fd9acb8820521",
+  "initialCi": 0.002696808186066324,
+  "initialK": 0.19770126171185687,
+  "initialCategory": "BOTH_ACCEPTABLE",
+  "latentWeights": [
+    2.9343730298629858,
+    1.9114518469163864,
+    1.657637599514457
+  ],
+  "perturbations": [
+    {
+      "i": 0,
+      "j": 2,
+      "epsilon": -0.8440119193116684,
+      "before": 1.7702138457299115,
+      "after": 0.7611600991952904,
+      "attempts": 1
+    },
+    {
+      "i": 1,
+      "j": 2,
+      "epsilon": -1.0642861681539744,
+      "before": 1.1531180563690608,
+      "after": 0.39779577183011855,
+      "attempts": 1
+    }
+  ]
+}

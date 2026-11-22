@@ -1,0 +1,104 @@
+{
+  "profile": "REPORT",
+  "caseId": "B_n07_m000",
+  "type": "PERTURBED_CONSISTENT",
+  "size": 7,
+  "sample": 0,
+  "masterSeed": 20261123,
+  "generationSeed": -6880324207849033867,
+  "generatorVersion": "matrix-generator-v1",
+  "parameters": {
+    "perturbationFraction": 0.4,
+    "weightRatioBound": 3.0,
+    "noiseLogBound": 1.0986122886681098,
+    "proposalAttempts": 64
+  },
+  "inputFile": "inputs/REPORT/B_n07_m000.csv",
+  "sha256": "0e3db48c94bed0bca826eae89e0c2cd1420fc11d2b5d4e7fe4957bd7de13b91d",
+  "initialCi": 0.032786778088105116,
+  "initialK": 0.7950284957969869,
+  "initialCategory": "K_ONLY_VIOLATION",
+  "latentWeights": [
+    1.00431302686202,
+    2.030657518715601,
+    1.646105249969442,
+    2.960975492180285,
+    2.911159361503802,
+    1.466243492042096,
+    2.844448764825574
+  ],
+  "perturbations": [
+    {
+      "i": 2,
+      "j": 6,
+      "epsilon": 0.3672176601358723,
+      "before": 0.5787079979520685,
+      "after": 0.8354877526075077,
+      "attempts": 1
+    },
+    {
+      "i": 0,
+      "j": 2,
+      "epsilon": -0.11099632684831569,
+      "before": 0.6101147097858195,
+      "after": 0.5460173006796043,
+      "attempts": 1
+    },
+    {
+      "i": 2,
+      "j": 3,
+      "epsilon": 0.5410948507139363,
+      "before": 0.5559334261011896,
+      "after": 0.9550306178735424,
+      "attempts": 1
+    },
+    {
+      "i": 5,
+      "j": 6,
+      "epsilon": -0.06971868954067187,
+      "before": 0.5154754447236487,
+      "after": 0.4807613431469892,
+      "attempts": 1
+    },
+    {
+      "i": 0,
+      "j": 4,
+      "epsilon": 0.3903919125201323,
+      "before": 0.34498730648095727,
+      "after": 0.5097393599011254,
+      "attempts": 1
+    },
+    {
+      "i": 1,
+      "j": 6,
+      "epsilon": -0.9796835656172964,
+      "before": 0.7139019495892112,
+      "after": 0.26802012253740204,
+      "attempts": 1
+    },
+    {
+      "i": 1,
+      "j": 2,
+      "epsilon": 0.23798308764023646,
+      "before": 1.2336134149097073,
+      "after": 1.565070210633791,
+      "attempts": 1
+    },
+    {
+      "i": 0,
+      "j": 5,
+      "epsilon": -0.22014064040771686,
+      "before": 0.6849565111885155,
+      "after": 0.5496131727590237,
+      "attempts": 1
+    },
+    {
+      "i": 3,
+      "j": 6,
+      "epsilon": -0.17807743445446741,
+      "before": 1.040966365362484,
+      "after": 0.8711614520731268,
+      "attempts": 1
+    }
+  ]
+}

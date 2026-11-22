@@ -1,0 +1,104 @@
+{
+  "profile": "REPORT",
+  "caseId": "B_n07_m003",
+  "type": "PERTURBED_CONSISTENT",
+  "size": 7,
+  "sample": 3,
+  "masterSeed": 20261123,
+  "generationSeed": 6623462907441735942,
+  "generatorVersion": "matrix-generator-v1",
+  "parameters": {
+    "perturbationFraction": 0.4,
+    "weightRatioBound": 3.0,
+    "noiseLogBound": 1.0986122886681098,
+    "proposalAttempts": 64
+  },
+  "inputFile": "inputs/REPORT/B_n07_m003.csv",
+  "sha256": "e737afd1f1888230e83db416cb556a7dd8a890c1dda9a26bc8562dfc7a1334b1",
+  "initialCi": 0.043097111943143585,
+  "initialK": 0.7732110688348148,
+  "initialCategory": "K_ONLY_VIOLATION",
+  "latentWeights": [
+    1.4362300814413917,
+    1.6777950930837973,
+    2.78831072888812,
+    1.9801676015565524,
+    1.1525611959585373,
+    2.3483579461268835,
+    1.6221597921503066
+  ],
+  "perturbations": [
+    {
+      "i": 4,
+      "j": 6,
+      "epsilon": -0.10042854833815652,
+      "before": 0.7105102724995559,
+      "after": 0.6426208273506286,
+      "attempts": 1
+    },
+    {
+      "i": 2,
+      "j": 6,
+      "epsilon": 0.07912397512573302,
+      "before": 1.7188878323706842,
+      "after": 1.8604184726631248,
+      "attempts": 1
+    },
+    {
+      "i": 0,
+      "j": 2,
+      "epsilon": -0.43519860419561796,
+      "before": 0.5150896801283369,
+      "after": 0.3333331423886132,
+      "attempts": 1
+    },
+    {
+      "i": 2,
+      "j": 4,
+      "epsilon": 0.2737307111532424,
+      "before": 2.4192300926539505,
+      "after": 3.1809505180372155,
+      "attempts": 1
+    },
+    {
+      "i": 1,
+      "j": 2,
+      "epsilon": 1.0485369085102034,
+      "before": 0.6017245767127406,
+      "after": 1.7170049354617491,
+      "attempts": 1
+    },
+    {
+      "i": 0,
+      "j": 6,
+      "epsilon": -0.007515708701676525,
+      "before": 0.8853813837523061,
+      "after": 0.8787520584263976,
+      "attempts": 1
+    },
+    {
+      "i": 3,
+      "j": 4,
+      "epsilon": -0.812816541515844,
+      "before": 1.718058536501161,
+      "after": 0.7621425661842257,
+      "attempts": 1
+    },
+    {
+      "i": 1,
+      "j": 6,
+      "epsilon": 0.01923139095138335,
+      "before": 1.03429705334993,
+      "after": 1.054380521880863,
+      "attempts": 1
+    },
+    {
+      "i": 2,
+      "j": 3,
+      "epsilon": 0.14308983278323545,
+      "before": 1.4081185484987786,
+      "after": 1.6247342815287054,
+      "attempts": 1
+    }
+  ]
+}

@@ -69,3 +69,48 @@ tasks.register<JavaExec>("reproduceArticles") {
     }
     systemProperty("file.encoding", "UTF-8")
 }
+
+// Heavy measurements are deliberately independent of build/test.
+fun benchmark(profile: String, suffix: String, plots: Boolean) {
+    val measurement = tasks.register<JavaExec>("runBenchmark$suffix") {
+        group = "experiments"
+        description = "Execute the fixed $profile comparison plan"
+        dependsOn(tasks.classes)
+        classpath = sourceSets["main"].runtimeClasspath
+        mainClass = "MCD.consistency.experiments.BenchmarkRunner"
+        args(profile)
+        maxHeapSize = "512m"
+        systemProperty("file.encoding", "UTF-8")
+    }
+    val plotting = if (plots) tasks.register<Exec>("plot$suffix") {
+        group = "experiments"
+        description = "Rebuild $profile figures from saved measurements only"
+        val localPython = file("experiments/comparison/.venv/bin/python")
+        commandLine(if (localPython.exists()) localPython.absolutePath else "python3",
+            "experiments/comparison/scripts/plot_results.py", "--profile", profile)
+    } else null
+    plotting?.configure { mustRunAfter(measurement) }
+    tasks.register("benchmark$suffix") {
+        group = "experiments"
+        description = "Execute $profile measurements" + if (plots) " and plot their results" else ""
+        dependsOn(measurement)
+        if (plotting != null) {
+            dependsOn(plotting)
+        }
+    }
+}
+
+benchmark("SMOKE", "Smoke", true)
+benchmark("PILOT", "Pilot", false)
+benchmark("REPORT", "Report", true)
+benchmark("FULL", "Full", true)
+
+tasks.register<JavaExec>("verifyComparison") {
+    group = "experiments"
+    description = "Reload and verify saved REPORT matrices and aggregates without optimization"
+    dependsOn(tasks.classes)
+    classpath = sourceSets["main"].runtimeClasspath
+    mainClass = "MCD.consistency.experiments.BenchmarkVerifier"
+    args("REPORT")
+    maxHeapSize = "512m"
+}

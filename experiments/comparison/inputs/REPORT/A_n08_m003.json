@@ -1,0 +1,23 @@
+{
+  "profile": "REPORT",
+  "caseId": "A_n08_m003",
+  "type": "DISCRETE_EXPERT",
+  "size": 8,
+  "sample": 3,
+  "masterSeed": 20261123,
+  "generationSeed": -5532869896014670768,
+  "generatorVersion": "matrix-generator-v1",
+  "parameters": {
+    "perturbationFraction": 0.4,
+    "weightRatioBound": 3.0,
+    "noiseLogBound": 1.0986122886681098,
+    "proposalAttempts": 64
+  },
+  "inputFile": "inputs/REPORT/A_n08_m003.csv",
+  "sha256": "6e5ee56804837e6dc3af18714bee3cf4372e164be9ef597c8e406a9217ebb2f6",
+  "initialCi": 0.9250144663073817,
+  "initialK": 0.99375,
+  "initialCategory": "BOTH_VIOLATED",
+  "latentWeights": [],
+  "perturbations": []
+}

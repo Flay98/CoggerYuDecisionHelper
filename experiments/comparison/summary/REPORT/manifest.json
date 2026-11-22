@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "status": "COMPLETE",
+  "profile": "REPORT",
+  "planSha256": "6f0e459b73e5c8246cefa30674e1d9f84b6fef64d75638f50e616bab263c0cfe",
+  "expectedInputs": 64,
+  "expectedRuns": 448,
+  "completedRuns": 448,
+  "warmupRuns": 6,
+  "wallSeconds": 86.345810966,
+  "maxOutputBytes": 536870912,
+  "environment": {
+    "javaVersion": "17.0.21.0.3",
+    "javaVendor": "Ubuntu",
+    "vmName": "OpenJDK 64-Bit Server VM",
+    "osName": "Linux",
+    "osVersion": "7.0.0-34-generic",
+    "osArch": "amd64",
+    "availableProcessors": 12,
+    "maxHeapBytes": 536870912,
+    "cpuModel": "Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz",
+    "physicalMemory": "32724536 kB"
+  },
+  "failure": null
+}

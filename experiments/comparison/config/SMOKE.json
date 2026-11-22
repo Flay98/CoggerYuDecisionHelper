@@ -1,0 +1,6 @@
+{
+  "name": "SMOKE", "sizes": [3, 5], "samplesPerType": 1, "gaSeeds": [42],
+  "masterSeed": 20261123, "population": 40, "maxGenerations": 5, "maxIterations": 10,
+  "warmupRounds": 1, "traceSize": 5, "maxWallSeconds": 120, "runTimeoutSeconds": 30,
+  "generator": {"perturbationFraction": 0.4, "weightRatioBound": 3.0, "noiseLogBound": 1.0986122886681098, "proposalAttempts": 64}
+}

@@ -1,0 +1,26 @@
+{
+  "name": "PILOT",
+  "sizes": [
+    3,
+    6,
+    10
+  ],
+  "samplesPerType": 1,
+  "gaSeeds": [
+    42
+  ],
+  "masterSeed": 20261123,
+  "population": 1000,
+  "maxGenerations": 100,
+  "maxIterations": 100,
+  "warmupRounds": 2,
+  "traceSize": 6,
+  "maxWallSeconds": 300,
+  "runTimeoutSeconds": 120,
+  "generator": {
+    "perturbationFraction": 0.4,
+    "weightRatioBound": 3.0,
+    "noiseLogBound": 1.0986122886681098,
+    "proposalAttempts": 64
+  }
+}

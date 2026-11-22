@@ -1,0 +1,104 @@
+{
+  "profile": "REPORT",
+  "caseId": "B_n07_m002",
+  "type": "PERTURBED_CONSISTENT",
+  "size": 7,
+  "sample": 2,
+  "masterSeed": 20261123,
+  "generationSeed": -5410084883957267920,
+  "generatorVersion": "matrix-generator-v1",
+  "parameters": {
+    "perturbationFraction": 0.4,
+    "weightRatioBound": 3.0,
+    "noiseLogBound": 1.0986122886681098,
+    "proposalAttempts": 64
+  },
+  "inputFile": "inputs/REPORT/B_n07_m002.csv",
+  "sha256": "b5d035c4f110762131fd1b1026958958cf155ce52d84447bd1c07bdd11763fae",
+  "initialCi": 0.07191729025625475,
+  "initialK": 0.8235288224678421,
+  "initialCategory": "K_ONLY_VIOLATION",
+  "latentWeights": [
+    2.213212217809013,
+    1.9299004586342705,
+    1.8038000662556746,
+    2.6602200173590345,
+    1.3895626446035811,
+    2.970752688195907,
+    1.2999861179040078
+  ],
+  "perturbations": [
+    {
+      "i": 5,
+      "j": 6,
+      "epsilon": -0.6034214942268489,
+      "before": 2.2852187783248854,
+      "after": 1.2498709062407811,
+      "attempts": 1
+    },
+    {
+      "i": 0,
+      "j": 5,
+      "epsilon": -0.6146314804898426,
+      "before": 0.7450004931757087,
+      "after": 0.4029261924428027,
+      "attempts": 1
+    },
+    {
+      "i": 2,
+      "j": 5,
+      "epsilon": -0.4386615532845075,
+      "before": 0.6071862102230714,
+      "after": 0.39157378382397173,
+      "attempts": 1
+    },
+    {
+      "i": 4,
+      "j": 6,
+      "epsilon": 0.7428458405718724,
+      "before": 1.0689057563506903,
+      "after": 2.246742317480863,
+      "attempts": 1
+    },
+    {
+      "i": 1,
+      "j": 5,
+      "epsilon": 0.10285516836336067,
+      "before": 0.6496334973633466,
+      "after": 0.7200088632613192,
+      "attempts": 1
+    },
+    {
+      "i": 2,
+      "j": 6,
+      "epsilon": -0.9917518754729147,
+      "before": 1.3875533295416844,
+      "after": 0.5146800292327807,
+      "attempts": 1
+    },
+    {
+      "i": 3,
+      "j": 5,
+      "epsilon": 0.6836220781264897,
+      "before": 0.8954700362400566,
+      "after": 1.7739621713248221,
+      "attempts": 1
+    },
+    {
+      "i": 0,
+      "j": 4,
+      "epsilon": -1.0859519946729945,
+      "before": 1.5927401520212896,
+      "after": 0.5376776318685805,
+      "attempts": 1
+    },
+    {
+      "i": 0,
+      "j": 6,
+      "epsilon": 0.19440580910425406,
+      "before": 1.70248911686643,
+      "after": 2.067824680399561,
+      "attempts": 1
+    }
+  ]
+}

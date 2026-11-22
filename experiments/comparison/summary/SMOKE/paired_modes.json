@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "rows": [
+    {
+      "caseId": "A_n03_m000",
+      "type": "DISCRETE_EXPERT",
+      "size": "3",
+      "sha256": "d0c87a2054ee39142d02b9619a05567fad471d1cd23dbdfc86e514e4cc07834f",
+      "meanFinalCi_BminusU": -0.011390842514618749,
+      "meanFinalK_BminusU": -0.29460335806400867,
+      "meanChangedComparisons_BminusU": -2.0,
+      "meanLogDeviation_BminusU": 0.32765344834118054,
+      "meanElapsedMillis_BminusU": -0.8751519999999999,
+      "ownSuccessRate_BminusU": 1.0,
+      "bothAcceptableRate_BminusU": 1.0
+    },
+    {
+      "caseId": "B_n03_m000",
+      "type": "PERTURBED_CONSISTENT",
+      "size": "3",
+      "sha256": "bc58366aaa6af8cd44c7ee4fbb29eda6a0b82245d044ea20382fd9acb8820521",
+      "meanFinalCi_BminusU": 0.0,
+      "meanFinalK_BminusU": 0.0,
+      "meanChangedComparisons_BminusU": 0.0,
+      "meanLogDeviation_BminusU": 0.0,
+      "meanElapsedMillis_BminusU": 0.014638000000000005,
+      "ownSuccessRate_BminusU": 0.0,
+      "bothAcceptableRate_BminusU": 0.0
+    },
+    {
+      "caseId": "A_n05_m000",
+      "type": "DISCRETE_EXPERT",
+      "size": "5",
+      "sha256": "d32ee7f1578ee79ed88d02c969f31f74818a2b0b888f0b6da3b401c65e875bcd",
+      "meanFinalCi_BminusU": -0.26682191296765523,
+      "meanFinalK_BminusU": -0.023146816662782843,
+      "meanChangedComparisons_BminusU": 3.0,
+      "meanLogDeviation_BminusU": -0.07082342978930456,
+      "meanElapsedMillis_BminusU": 1.095308,
+      "ownSuccessRate_BminusU": 0.0,
+      "bothAcceptableRate_BminusU": 0.0
+    },
+    {
+      "caseId": "B_n05_m000",
+      "type": "PERTURBED_CONSISTENT",
+      "size": "5",
+      "sha256": "ff6d0e172f1645f3cb744bfa71c10bee70ed8940ac247026534ff460f4ce1d06",
+      "meanFinalCi_BminusU": 0.0005195978896159748,
+      "meanFinalK_BminusU": -0.0029538815332345036,
+      "meanChangedComparisons_BminusU": 2.0,
+      "meanLogDeviation_BminusU": 0.01983340765201147,
+      "meanElapsedMillis_BminusU": -0.19793700000000003,
+      "ownSuccessRate_BminusU": 0.0,
+      "bothAcceptableRate_BminusU": 0.0
+    }
+  ]
+}

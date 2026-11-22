@@ -1,0 +1,79 @@
+{
+  "profile": "REPORT",
+  "caseId": "B_n06_m003",
+  "type": "PERTURBED_CONSISTENT",
+  "size": 6,
+  "sample": 3,
+  "masterSeed": 20261123,
+  "generationSeed": -706359229167839784,
+  "generatorVersion": "matrix-generator-v1",
+  "parameters": {
+    "perturbationFraction": 0.4,
+    "weightRatioBound": 3.0,
+    "noiseLogBound": 1.0986122886681098,
+    "proposalAttempts": 64
+  },
+  "inputFile": "inputs/REPORT/B_n06_m003.csv",
+  "sha256": "1f0ef13f3d975d291f932495dac60228eb9d409d86da7456cf2191d5edcfcd8e",
+  "initialCi": 0.012379187517873902,
+  "initialK": 0.5129596695027205,
+  "initialCategory": "K_ONLY_VIOLATION",
+  "latentWeights": [
+    2.8398506888877795,
+    1.0847019805552829,
+    1.4079424685358368,
+    1.3500933631209904,
+    2.0847272755406876,
+    1.4319211018450908
+  ],
+  "perturbations": [
+    {
+      "i": 2,
+      "j": 5,
+      "epsilon": -0.14205773340882444,
+      "before": 0.9832542217037262,
+      "after": 0.8530430127769789,
+      "attempts": 1
+    },
+    {
+      "i": 3,
+      "j": 4,
+      "epsilon": 0.053697560941517425,
+      "before": 0.6476115024546004,
+      "after": 0.6833372698834476,
+      "attempts": 1
+    },
+    {
+      "i": 1,
+      "j": 2,
+      "epsilon": 0.3463410253297661,
+      "before": 0.7704164089057547,
+      "after": 1.089279976345904,
+      "attempts": 1
+    },
+    {
+      "i": 0,
+      "j": 2,
+      "epsilon": 0.1814865251999762,
+      "before": 2.0170218260700867,
+      "after": 2.4184059025633364,
+      "attempts": 1
+    },
+    {
+      "i": 2,
+      "j": 3,
+      "epsilon": -0.7731059061071767,
+      "before": 1.042848225904257,
+      "after": 0.4813549893200252,
+      "attempts": 1
+    },
+    {
+      "i": 0,
+      "j": 5,
+      "epsilon": -0.3449947795528402,
+      "before": 1.983245225751972,
+      "after": 1.4045819673221906,
+      "attempts": 1
+    }
+  ]
+}
