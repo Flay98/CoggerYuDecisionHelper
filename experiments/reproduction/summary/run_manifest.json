@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "planVersion": "reproduction-v1",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    10,
+    42,
+    100,
+    2026
+  ],
+  "mutationModes": [
+    "UPPER_ONLY",
+    "BIDIRECTIONAL"
+  ],
+  "populationSize": 1000,
+  "maxGenerations": 100,
+  "targetK": 0.3,
+  "minimumComparison": 0.1111111111111111,
+  "maximumComparison": 9.0,
+  "maxMutationAttempts": 64,
+  "protectedDataSha256": {
+    "inputs/published/sayadi_4x4.csv": "2a93af5acb9bc1971c87215ba84b88d8d04d2b2ca8b49e53dabb31b72f62e007",
+    "reference/kurennykh_2018_table1.csv": "c291a1817a2c9ede3ce9b818f6b26c78cd1da7043f6da07dd8a8bc956fb0bfba",
+    "reference/sayadi_2026_corrected.json": "35466b9a5bd6ca658d28a30f5d5a41266170df2566198bbea889bb82ab6edfd9",
+    "reference/sources.json": "8f386545c28443cfa50c58ecc2018caa8bb309aabadec19e893a314367b0f799",
+    "inputs/own/illustrative_3x3.csv": "0afbf4dedf64223fa6f4ceffb799c22703a97ec3f6651ae0f3a55ac39970c269",
+    "inputs/own/cyclic_3x3.csv": "524f9201858512bf7dea22613f733da695acda9c1ac75ff7b652fd69f1fb33b7",
+    "inputs/own/perturbed_4x4.csv": "6d59477405f160322b619facb0c87abfa96022b3eb2aeb3e9448029367af57e9"
+  },
+  "geneticExperimentIds": [
+    "SJ2026_UPPER_ONLY_SEED_0",
+    "SJ2026_UPPER_ONLY_SEED_1",
+    "SJ2026_UPPER_ONLY_SEED_2",
+    "SJ2026_UPPER_ONLY_SEED_3",
+    "SJ2026_UPPER_ONLY_SEED_4",
+    "SJ2026_UPPER_ONLY_SEED_5",
+    "SJ2026_UPPER_ONLY_SEED_10",
+    "SJ2026_UPPER_ONLY_SEED_42",
+    "SJ2026_UPPER_ONLY_SEED_100",
+    "SJ2026_UPPER_ONLY_SEED_2026",
+    "SJ2026_BIDIRECTIONAL_SEED_0",
+    "SJ2026_BIDIRECTIONAL_SEED_1",
+    "SJ2026_BIDIRECTIONAL_SEED_2",
+    "SJ2026_BIDIRECTIONAL_SEED_3",
+    "SJ2026_BIDIRECTIONAL_SEED_4",
+    "SJ2026_BIDIRECTIONAL_SEED_5",
+    "SJ2026_BIDIRECTIONAL_SEED_10",
+    "SJ2026_BIDIRECTIONAL_SEED_42",
+    "SJ2026_BIDIRECTIONAL_SEED_100",
+    "SJ2026_BIDIRECTIONAL_SEED_2026"
+  ],
+  "ownExperimentIds": [
+    "K2018_OWN_ILLUSTRATIVE_3",
+    "K2018_OWN_CYCLIC_3",
+    "K2018_OWN_PERTURBED_4"
+  ],
+  "javaVersion": "17.0.21.0.3",
+  "osName": "Linux",
+  "osArch": "amd64"
+}

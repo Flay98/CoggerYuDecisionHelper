@@ -76,7 +76,7 @@ public final class ResultJson {
     private static JsonObject geneticParameters(GeneticCorrectionOptions g) {
         return object("populationSize", g.populationSize(), "maxGenerations", g.maxGenerations(), "targetK", g.targetK(),
                 "minimumComparison", g.minimumComparison(), "maximumComparison", g.maximumComparison(),
-                "seed", g.seed(), "maxMutationAttempts", g.maxMutationAttempts());
+                "seed", g.seed(), "maxMutationAttempts", g.maxMutationAttempts(), "mutationMode", g.mutationMode().name());
     }
 
     private static JsonArray matrix(PairwiseComparisonMatrix matrix) {

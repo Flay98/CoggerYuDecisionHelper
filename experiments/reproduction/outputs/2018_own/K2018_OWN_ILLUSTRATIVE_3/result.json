@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "indexBase": 0,
+  "name": "illustrative_3x3.csv",
+  "size": 3,
+  "inputFile": "/home/yan-kovalenko/IdeaProjects/lab_1_5/experiments/reproduction/inputs/own/illustrative_3x3.csv",
+  "methods": [
+    "cosine"
+  ],
+  "matrix": [
+    [
+      1.0,
+      3.0,
+      1.0
+    ],
+    [
+      0.3333333333333333,
+      1.0,
+      2.0
+    ],
+    [
+      1.0,
+      0.5,
+      1.0
+    ]
+  ],
+  "originalMatrixCsv": "original_matrix.csv",
+  "initialMetrics": {
+    "ci": 0.18372090049062084,
+    "k": 0.8333333333333333
+  },
+  "results": {
+    "cosine": {
+      "algorithm": "Kurennykh et al. (2018)",
+      "status": "TARGET_REACHED",
+      "detail": "Corrected CI is at or below the target",
+      "initialMetrics": {
+        "ci": 0.18372090049062084,
+        "k": 0.8333333333333333
+      },
+      "finalMetrics": {
+        "ci": 4.440892098500626E-16,
+        "k": 0.0
+      },
+      "parameters": {
+        "targetCi": 0.1,
+        "maxIterations": 100,
+        "minimumCiDecrease": 1.0E-12,
+        "minimumSupportCosine": 0.0,
+        "minimumComparison": 4.9E-324,
+        "maximumComparison": 1.7976931348623157E308
+      },
+      "iterations": 1,
+      "changedComparisons": 1,
+      "elapsedMillis": 4.377935,
+      "matrix": [
+        [
+          1.0,
+          3.0,
+          6.0
+        ],
+        [
+          0.3333333333333333,
+          1.0,
+          2.0
+        ],
+        [
+          0.16666666666666666,
+          0.5,
+          1.0
+        ]
+      ],
+      "matrixCsv": "cosine_corrected.csv",
+      "history": [
+        {
+          "iteration": 1,
+          "i": 0,
+          "k": 2,
+          "via": 1,
+          "oldValue": 1.0,
+          "newValue": 6.0,
+          "delta": 5.0,
+          "comparisonCosine": 0.7035264706814484,
+          "supportCosine": 0.7112867591590193,
+          "ciBefore": 0.18372090049062084,
+          "ciAfter": 4.440892098500626E-16,
+          "kBefore": 0.8333333333333333,
+          "kAfter": 0.0
+        }
+      ]
+    }
+  }
+}

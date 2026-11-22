@@ -199,7 +199,12 @@ public class ConsistencyCliTest {
     public void legacyMainStillRunsItsOriginalConsoleInASeparateProcess() throws Exception {
         Path java = Path.of(System.getProperty("java.home"), "bin", "java");
         String classes = Path.of(Main.class.getProtectionDomain().getCodeSource().getLocation().toURI()).toString();
-        Process process = new ProcessBuilder(java.toString(), "-cp", classes, "MCD.Main").redirectErrorStream(true).start();
+        ProcessBuilder builder = new ProcessBuilder(java.toString(), "-Dfile.encoding=UTF-8", "-cp", classes, "MCD.Main")
+                .redirectErrorStream(true);
+        // Child encoding is explicit, independently of the parent/system locale.
+        builder.environment().put("LC_ALL", "C.UTF-8");
+        builder.environment().put("LANG", "C.UTF-8");
+        Process process = builder.start();
         try {
             process.getOutputStream().write("1\n".getBytes(StandardCharsets.UTF_8));
             process.getOutputStream().close();

@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "indexBase": 0,
+  "name": "sayadi_4x4.csv",
+  "size": 4,
+  "inputFile": "/home/yan-kovalenko/IdeaProjects/lab_1_5/experiments/reproduction/inputs/published/sayadi_4x4.csv",
+  "methods": [
+    "genetic"
+  ],
+  "matrix": [
+    [
+      1.0,
+      2.0,
+      5.0,
+      9.0
+    ],
+    [
+      0.5,
+      1.0,
+      3.0,
+      8.0
+    ],
+    [
+      0.2,
+      0.3333333333333333,
+      1.0,
+      4.0
+    ],
+    [
+      0.1111111111111111,
+      0.125,
+      0.25,
+      1.0
+    ]
+  ],
+  "originalMatrixCsv": "original_matrix.csv",
+  "initialMetrics": {
+    "ci": 0.024531717644545203,
+    "k": 0.55
+  },
+  "results": {
+    "genetic": {
+      "algorithm": "Sayadi-Janicki (2026), Algorithm 1",
+      "status": "TARGET_REACHED",
+      "detail": "Best K is strictly below the target",
+      "initialMetrics": {
+        "ci": 0.024531717644545203,
+        "k": 0.55
+      },
+      "finalMetrics": {
+        "ci": 0.0046721530013007495,
+        "k": 0.27305009030359934
+      },
+      "parameters": {
+        "populationSize": 1000,
+        "maxGenerations": 100,
+        "targetK": 0.3,
+        "minimumComparison": 0.1111111111111111,
+        "maximumComparison": 9.0,
+        "seed": 5,
+        "maxMutationAttempts": 64,
+        "mutationMode": "UPPER_ONLY"
+      },
+      "seed": 5,
+      "generations": 5,
+      "evaluatedIndividuals": 5500,
+      "changedComparisons": 5,
+      "elapsedMillis": 9.938996,
+      "matrix": [
+        [
+          1.0,
+          1.5034480653382918,
+          4.011328859435529,
+          9.0
+        ],
+        [
+          0.6651377078163251,
+          1.0,
+          2.988223076798964,
+          8.123678149111823
+        ],
+        [
+          0.24929394598196053,
+          0.3346470374866448,
+          1.0,
+          3.086382547010245
+        ],
+        [
+          0.1111111111111111,
+          0.12309694963842602,
+          0.32400390579213595,
+          1.0
+        ]
+      ],
+      "matrixCsv": "genetic_corrected.csv",
+      "history": [
+        {
+          "generation": 0,
+          "bestK": 0.4863807704611828,
+          "populationSize": 1000,
+          "retained": 1,
+          "unmutatedOffspring": 0,
+          "mutationSlots": 999,
+          "successfulMutations": 999,
+          "failedMutations": 0,
+          "evaluatedIndividuals": 1000
+        },
+        {
+          "generation": 1,
+          "bestK": 0.4375,
+          "populationSize": 1000,
+          "retained": 100,
+          "unmutatedOffspring": 90,
+          "mutationSlots": 810,
+          "successfulMutations": 810,
+          "failedMutations": 0,
+          "evaluatedIndividuals": 1900
+        },
+        {
+          "generation": 2,
+          "bestK": 0.40794111652456794,
+          "populationSize": 1000,
+          "retained": 100,
+          "unmutatedOffspring": 90,
+          "mutationSlots": 810,
+          "successfulMutations": 810,
+          "failedMutations": 0,
+          "evaluatedIndividuals": 2800
+        },
+        {
+          "generation": 3,
+          "bestK": 0.3802548206397104,
+          "populationSize": 1000,
+          "retained": 100,
+          "unmutatedOffspring": 90,
+          "mutationSlots": 810,
+          "successfulMutations": 810,
+          "failedMutations": 0,
+          "evaluatedIndividuals": 3700
+        },
+        {
+          "generation": 4,
+          "bestK": 0.31243481507849313,
+          "populationSize": 1000,
+          "retained": 100,
+          "unmutatedOffspring": 90,
+          "mutationSlots": 810,
+          "successfulMutations": 810,
+          "failedMutations": 0,
+          "evaluatedIndividuals": 4600
+        },
+        {
+          "generation": 5,
+          "bestK": 0.27305009030359934,
+          "populationSize": 1000,
+          "retained": 100,
+          "unmutatedOffspring": 90,
+          "mutationSlots": 810,
+          "successfulMutations": 810,
+          "failedMutations": 0,
+          "evaluatedIndividuals": 5500
+        }
+      ]
+    }
+  }
+}

@@ -72,6 +72,19 @@ final class GeneticChromosome {
         return genes[index];
     }
 
+    /** Actual lower entry, including roundoff accepted in the original phenotype. */
+    double lowerGene(int index) {
+        int offset = 0;
+        for (int i = 0; i < size; i++) {
+            int rowLength = size - i - 1;
+            if (index >= offset && index < offset + rowLength) {
+                return matrix.get(i + 1 + index - offset, i);
+            }
+            offset += rowLength;
+        }
+        throw new IndexOutOfBoundsException("Invalid gene index: " + index);
+    }
+
     double[] genes() {
         return genes.clone();
     }

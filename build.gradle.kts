@@ -57,3 +57,15 @@ tasks.register<JavaExec>("runConsistency") {
     }
     systemProperty("file.encoding", "UTF-8")
 }
+
+tasks.register<JavaExec>("reproduceArticles") {
+    group = "verification"
+    description = "Reproduce the available article examples with a fixed, bounded experiment plan"
+    dependsOn(tasks.classes)
+    classpath = sourceSets["main"].runtimeClasspath
+    mainClass = "MCD.consistency.reproduction.ArticleReproduction"
+    javaLauncher = javaToolchains.launcherFor {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+    systemProperty("file.encoding", "UTF-8")
+}

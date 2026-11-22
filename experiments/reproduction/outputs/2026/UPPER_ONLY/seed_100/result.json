@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 1,
+  "indexBase": 0,
+  "name": "sayadi_4x4.csv",
+  "size": 4,
+  "inputFile": "/home/yan-kovalenko/IdeaProjects/lab_1_5/experiments/reproduction/inputs/published/sayadi_4x4.csv",
+  "methods": [
+    "genetic"
+  ],
+  "matrix": [
+    [
+      1.0,
+      2.0,
+      5.0,
+      9.0
+    ],
+    [
+      0.5,
+      1.0,
+      3.0,
+      8.0
+    ],
+    [
+      0.2,
+      0.3333333333333333,
+      1.0,
+      4.0
+    ],
+    [
+      0.1111111111111111,
+      0.125,
+      0.25,
+      1.0
+    ]
+  ],
+  "originalMatrixCsv": "original_matrix.csv",
+  "initialMetrics": {
+    "ci": 0.024531717644545203,
+    "k": 0.55
+  },
+  "results": {
+    "genetic": {
+      "algorithm": "Sayadi-Janicki (2026), Algorithm 1",
+      "status": "TARGET_REACHED",
+      "detail": "Best K is strictly below the target",
+      "initialMetrics": {
+        "ci": 0.024531717644545203,
+        "k": 0.55
+      },
+      "finalMetrics": {
+        "ci": 0.0033074427718471355,
+        "k": 0.2659611364069557
+      },
+      "parameters": {
+        "populationSize": 1000,
+        "maxGenerations": 100,
+        "targetK": 0.3,
+        "minimumComparison": 0.1111111111111111,
+        "maximumComparison": 9.0,
+        "seed": 100,
+        "maxMutationAttempts": 64,
+        "mutationMode": "UPPER_ONLY"
+      },
+      "seed": 100,
+      "generations": 4,
+      "evaluatedIndividuals": 4600,
+      "changedComparisons": 5,
+      "elapsedMillis": 7.810872,
+      "matrix": [
+        [
+          1.0,
+          1.5192514406279467,
+          4.435525273863729,
+          8.921516807925068
+        ],
+        [
+          0.6582188920529664,
+          1.0,
+          3.1308900566655007,
+          8.0
+        ],
+        [
+          0.2254524409752518,
+          0.31939799287140486,
+          1.0,
+          2.5591404640580038
+        ],
+        [
+          0.11208856313667319,
+          0.125,
+          0.3907561988271288,
+          1.0
+        ]
+      ],
+      "matrixCsv": "genetic_corrected.csv",
+      "history": [
+        {
+          "generation": 0,
+          "bestK": 0.4873155011678346,
+          "populationSize": 1000,
+          "retained": 1,
+          "unmutatedOffspring": 0,
+          "mutationSlots": 999,
+          "successfulMutations": 999,
+          "failedMutations": 0,
+          "evaluatedIndividuals": 1000
+        },
+        {
+          "generation": 1,
+          "bestK": 0.4375,
+          "populationSize": 1000,
+          "retained": 100,
+          "unmutatedOffspring": 90,
+          "mutationSlots": 810,
+          "successfulMutations": 810,
+          "failedMutations": 0,
+          "evaluatedIndividuals": 1900
+        },
+        {
+          "generation": 2,
+          "bestK": 0.40057205380359157,
+          "populationSize": 1000,
+          "retained": 100,
+          "unmutatedOffspring": 90,
+          "mutationSlots": 810,
+          "successfulMutations": 810,
+          "failedMutations": 0,
+          "evaluatedIndividuals": 2800
+        },
+        {
+          "generation": 3,
+          "bestK": 0.385905041313641,
+          "populationSize": 1000,
+          "retained": 100,
+          "unmutatedOffspring": 90,
+          "mutationSlots": 810,
+          "successfulMutations": 810,
+          "failedMutations": 0,
+          "evaluatedIndividuals": 3700
+        },
+        {
+          "generation": 4,
+          "bestK": 0.2659611364069557,
+          "populationSize": 1000,
+          "retained": 100,
+          "unmutatedOffspring": 90,
+          "mutationSlots": 810,
+          "successfulMutations": 810,
+          "failedMutations": 0,
+          "evaluatedIndividuals": 4600
+        }
+      ]
+    }
+  }
+}

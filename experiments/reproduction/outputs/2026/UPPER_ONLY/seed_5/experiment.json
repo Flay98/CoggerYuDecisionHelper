@@ -1,0 +1,8 @@
+{
+  "schemaVersion": 1,
+  "experimentId": "SJ2026_UPPER_ONLY_SEED_5",
+  "origin": "PUBLISHED_INPUT_2026",
+  "inputFile": "inputs/published/sayadi_4x4.csv",
+  "inputSha256": "2a93af5acb9bc1971c87215ba84b88d8d04d2b2ca8b49e53dabb31b72f62e007",
+  "resultFile": "outputs/2026/UPPER_ONLY/seed_5/result.json"
+}

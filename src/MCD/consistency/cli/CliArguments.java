@@ -2,11 +2,13 @@ package MCD.consistency.cli;
 
 import MCD.consistency.CosineCorrectionOptions;
 import MCD.consistency.GeneticCorrectionOptions;
+import MCD.consistency.GeneticMutationMode;
 
 import java.nio.file.Path;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Set;
+import java.util.Locale;
 
 /** Parses CLI syntax; mathematical parameter validation belongs to the existing option classes. */
 public record CliArguments(Path input, Path outputDirectory, Method method,
@@ -14,7 +16,7 @@ public record CliArguments(Path input, Path outputDirectory, Method method,
                            boolean help) {
     private static final Set<String> VALUE_OPTIONS = Set.of("--input", "--method", "--output-dir", "--seed",
             "--min-comparison", "--max-comparison", "--cosine-target-ci", "--genetic-target-k",
-            "--max-iterations", "--max-generations", "--population");
+            "--max-iterations", "--max-generations", "--population", "--mutation-mode");
 
     public enum Method { COSINE, GENETIC, BOTH }
 
@@ -61,6 +63,12 @@ public record CliArguments(Path input, Path outputDirectory, Method method,
         long seed = longValue(values, "--seed", 0);
         CosineCorrectionOptions c = CosineCorrectionOptions.defaults();
         GeneticCorrectionOptions g = GeneticCorrectionOptions.defaults(seed);
+        GeneticMutationMode mutationMode;
+        try {
+            mutationMode = GeneticMutationMode.valueOf(values.getOrDefault("--mutation-mode", "UPPER_ONLY").toUpperCase(Locale.ROOT));
+        } catch (IllegalArgumentException error) {
+            throw new IllegalArgumentException("--mutation-mode must be UPPER_ONLY or BIDIRECTIONAL", error);
+        }
         // An absent bound keeps EACH method's own default; there is no hidden common scale.
         c = new CosineCorrectionOptions(number(values, "--cosine-target-ci", c.targetCi()),
                 integer(values, "--max-iterations", c.maxIterations()), c.minimumCiDecrease(), c.minimumSupportCosine(),
@@ -68,7 +76,7 @@ public record CliArguments(Path input, Path outputDirectory, Method method,
         g = new GeneticCorrectionOptions(integer(values, "--population", g.populationSize()),
                 integer(values, "--max-generations", g.maxGenerations()), number(values, "--genetic-target-k", g.targetK()),
                 number(values, "--min-comparison", g.minimumComparison()), number(values, "--max-comparison", g.maximumComparison()),
-                seed, g.maxMutationAttempts());
+                seed, g.maxMutationAttempts(), mutationMode);
         return new CliArguments(values.containsKey("--input") ? Path.of(values.get("--input")) : null,
                 Path.of(values.getOrDefault("--output-dir", "build/results/consistency")), method, c, g, help);
     }
@@ -104,6 +112,7 @@ public record CliArguments(Path input, Path outputDirectory, Method method,
                   --method METHOD          cosine | genetic | both (default: both)
                   --output-dir PATH        Default: build/results/consistency
                   --seed INTEGER           Genetic seed (default: 0)
+                  --mutation-mode MODE     UPPER_ONLY (default) | BIDIRECTIONAL
                   --min-comparison NUMBER   Override the lower range bound for both methods
                   --max-comparison NUMBER   Override the upper range bound for both methods
                   --cosine-target-ci NUMBER Default: 0.1; stop at CI <= target

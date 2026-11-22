@@ -1,0 +1,8 @@
+{
+  "schemaVersion": 1,
+  "experimentId": "K2018_OWN_PERTURBED_4",
+  "origin": "OWN_INDEPENDENT_CHECK_NOT_AUTHOR_DATA",
+  "inputFile": "inputs/own/perturbed_4x4.csv",
+  "inputSha256": "6d59477405f160322b619facb0c87abfa96022b3eb2aeb3e9448029367af57e9",
+  "resultFile": "outputs/2018_own/K2018_OWN_PERTURBED_4/result.json"
+}

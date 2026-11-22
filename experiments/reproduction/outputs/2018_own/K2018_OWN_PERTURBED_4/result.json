@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "indexBase": 0,
+  "name": "perturbed_4x4.csv",
+  "size": 4,
+  "inputFile": "/home/yan-kovalenko/IdeaProjects/lab_1_5/experiments/reproduction/inputs/own/perturbed_4x4.csv",
+  "methods": [
+    "cosine"
+  ],
+  "matrix": [
+    [
+      1.0,
+      2.0,
+      0.5,
+      8.0
+    ],
+    [
+      0.5,
+      1.0,
+      2.0,
+      4.0
+    ],
+    [
+      2.0,
+      0.5,
+      1.0,
+      2.0
+    ],
+    [
+      0.125,
+      0.25,
+      0.5,
+      1.0
+    ]
+  ],
+  "originalMatrixCsv": "original_matrix.csv",
+  "initialMetrics": {
+    "ci": 0.19439320452270673,
+    "k": 0.875
+  },
+  "results": {
+    "cosine": {
+      "algorithm": "Kurennykh et al. (2018)",
+      "status": "TARGET_REACHED",
+      "detail": "Corrected CI is at or below the target",
+      "initialMetrics": {
+        "ci": 0.19439320452270673,
+        "k": 0.875
+      },
+      "finalMetrics": {
+        "ci": 0.0,
+        "k": 0.0
+      },
+      "parameters": {
+        "targetCi": 0.1,
+        "maxIterations": 100,
+        "minimumCiDecrease": 1.0E-12,
+        "minimumSupportCosine": 0.0,
+        "minimumComparison": 4.9E-324,
+        "maximumComparison": 1.7976931348623157E308
+      },
+      "iterations": 1,
+      "changedComparisons": 1,
+      "elapsedMillis": 0.081817,
+      "matrix": [
+        [
+          1.0,
+          2.0,
+          4.0,
+          8.0
+        ],
+        [
+          0.5,
+          1.0,
+          2.0,
+          4.0
+        ],
+        [
+          0.25,
+          0.5,
+          1.0,
+          2.0
+        ],
+        [
+          0.125,
+          0.25,
+          0.5,
+          1.0
+        ]
+      ],
+      "matrixCsv": "cosine_corrected.csv",
+      "history": [
+        {
+          "iteration": 1,
+          "i": 0,
+          "k": 2,
+          "via": 1,
+          "oldValue": 0.5,
+          "newValue": 4.0,
+          "delta": 3.5,
+          "comparisonCosine": 0.7704666700434034,
+          "supportCosine": 0.8202523943647158,
+          "ciBefore": 0.19439320452270673,
+          "ciAfter": 0.0,
+          "kBefore": 0.875,
+          "kAfter": 0.0
+        }
+      ]
+    }
+  }
+}

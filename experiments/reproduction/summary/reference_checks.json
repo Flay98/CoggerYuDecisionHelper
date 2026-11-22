@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "checks": [
+    {
+      "id": "SJ2026_ORIGINAL",
+      "reportedK": 0.55,
+      "coreK": 0.55,
+      "independentDecimalK": 0.55,
+      "computedCi": 0.024531717644545203,
+      "ciReportedInArticle": false,
+      "errorFromReportedK": 0.0,
+      "validationTolerance": 1.0E-10,
+      "changedComparisonsFromMatrices": 0,
+      "reportedGenerations": null
+    },
+    {
+      "id": "SJ2026_PUBLISHED_CORRECTION",
+      "reportedK": 0.2317,
+      "coreK": 0.23170000000000002,
+      "independentDecimalK": 0.2317,
+      "computedCi": 0.0035399138716719256,
+      "ciReportedInArticle": false,
+      "errorFromReportedK": 2.7755575615628914E-17,
+      "validationTolerance": 1.0E-4,
+      "changedComparisonsFromMatrices": 2,
+      "reportedGenerations": 2
+    }
+  ]
+}

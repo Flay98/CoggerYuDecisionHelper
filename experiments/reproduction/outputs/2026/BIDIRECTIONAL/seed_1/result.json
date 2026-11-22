@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "indexBase": 0,
+  "name": "sayadi_4x4.csv",
+  "size": 4,
+  "inputFile": "/home/yan-kovalenko/IdeaProjects/lab_1_5/experiments/reproduction/inputs/published/sayadi_4x4.csv",
+  "methods": [
+    "genetic"
+  ],
+  "matrix": [
+    [
+      1.0,
+      2.0,
+      5.0,
+      9.0
+    ],
+    [
+      0.5,
+      1.0,
+      3.0,
+      8.0
+    ],
+    [
+      0.2,
+      0.3333333333333333,
+      1.0,
+      4.0
+    ],
+    [
+      0.1111111111111111,
+      0.125,
+      0.25,
+      1.0
+    ]
+  ],
+  "originalMatrixCsv": "original_matrix.csv",
+  "initialMetrics": {
+    "ci": 0.024531717644545203,
+    "k": 0.55
+  },
+  "results": {
+    "genetic": {
+      "algorithm": "Sayadi-Janicki (2026), Algorithm 1",
+      "status": "TARGET_REACHED",
+      "detail": "Best K is strictly below the target",
+      "initialMetrics": {
+        "ci": 0.024531717644545203,
+        "k": 0.55
+      },
+      "finalMetrics": {
+        "ci": 0.0010323112134518198,
+        "k": 0.15682375236866114
+      },
+      "parameters": {
+        "populationSize": 1000,
+        "maxGenerations": 100,
+        "targetK": 0.3,
+        "minimumComparison": 0.1111111111111111,
+        "maximumComparison": 9.0,
+        "seed": 1,
+        "maxMutationAttempts": 64,
+        "mutationMode": "BIDIRECTIONAL"
+      },
+      "seed": 1,
+      "generations": 1,
+      "evaluatedIndividuals": 1900,
+      "changedComparisons": 3,
+      "elapsedMillis": 3.024363,
+      "matrix": [
+        [
+          1.0,
+          1.2747634567913797,
+          5.0,
+          9.0
+        ],
+        [
+          0.7844592615770709,
+          1.0,
+          4.004028483416858,
+          8.0
+        ],
+        [
+          0.2,
+          0.24974847310442833,
+          1.0,
+          1.6846558432307859
+        ],
+        [
+          0.1111111111111111,
+          0.125,
+          0.5935930498909664,
+          1.0
+        ]
+      ],
+      "matrixCsv": "genetic_corrected.csv",
+      "history": [
+        {
+          "generation": 0,
+          "bestK": 0.4375,
+          "populationSize": 1000,
+          "retained": 1,
+          "unmutatedOffspring": 0,
+          "mutationSlots": 999,
+          "successfulMutations": 999,
+          "failedMutations": 0,
+          "evaluatedIndividuals": 1000
+        },
+        {
+          "generation": 1,
+          "bestK": 0.15682375236866114,
+          "populationSize": 1000,
+          "retained": 100,
+          "unmutatedOffspring": 90,
+          "mutationSlots": 810,
+          "successfulMutations": 810,
+          "failedMutations": 0,
+          "evaluatedIndividuals": 1900
+        }
+      ]
+    }
+  }
+}

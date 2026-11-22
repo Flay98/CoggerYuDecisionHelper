@@ -4,9 +4,20 @@ package MCD.consistency;
 public record GeneticCorrectionOptions(
         int populationSize, int maxGenerations, double targetK,
         double minimumComparison, double maximumComparison,
-        long seed, int maxMutationAttempts) {
+        long seed, int maxMutationAttempts, GeneticMutationMode mutationMode) {
+
+    /** Source-compatible configuration of the original upper-only operator. */
+    public GeneticCorrectionOptions(int populationSize, int maxGenerations, double targetK,
+                                    double minimumComparison, double maximumComparison,
+                                    long seed, int maxMutationAttempts) {
+        this(populationSize, maxGenerations, targetK, minimumComparison, maximumComparison,
+                seed, maxMutationAttempts, GeneticMutationMode.UPPER_ONLY);
+    }
 
     public GeneticCorrectionOptions {
+        if (mutationMode == null) {
+            throw new IllegalArgumentException("Mutation mode must not be null");
+        }
         if (populationSize < 2) {
             throw new IllegalArgumentException("Population size must be at least 2");
         }

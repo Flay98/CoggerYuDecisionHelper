@@ -31,6 +31,7 @@ public final class ConsoleReport {
             out.println("Evaluated individuals: " + g.evaluatedIndividuals());
             out.println("Changed comparisons: " + g.changedComparisons());
             out.println("Seed: " + g.seed());
+            out.println("Mutation mode: " + g.options().mutationMode());
             out.printf(Locale.ROOT, "Elapsed time: %.3f ms%n", run.elapsedMillis());
         }
         out.println("\nResults saved to: " + outputDirectory.toAbsolutePath().normalize());

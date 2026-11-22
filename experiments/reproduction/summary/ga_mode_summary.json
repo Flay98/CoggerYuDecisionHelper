@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "summaries": [
+    {
+      "mutationMode": "UPPER_ONLY",
+      "runs": 10,
+      "successes": 10,
+      "successRate": 1.0,
+      "minGenerations": 4,
+      "medianGenerations": 5.0,
+      "maxGenerations": 6,
+      "meanGenerations": 5.3,
+      "minFinalK": 0.22131226580705832,
+      "meanFinalK": 0.26636961224067585,
+      "maxFinalK": 0.2936067747435001,
+      "meanFinalCi": 0.004049090773880071,
+      "meanChangedComparisons": 4.1,
+      "meanElapsedMillis": 13.1174248
+    },
+    {
+      "mutationMode": "BIDIRECTIONAL",
+      "runs": 10,
+      "successes": 10,
+      "successRate": 1.0,
+      "minGenerations": 1,
+      "medianGenerations": 1.0,
+      "maxGenerations": 1,
+      "meanGenerations": 1.0,
+      "minFinalK": 0.15682375236866114,
+      "meanFinalK": 0.21912427372363602,
+      "maxFinalK": 0.27885660128401046,
+      "meanFinalCi": 0.0030109196721759862,
+      "meanChangedComparisons": 2.5,
+      "meanElapsedMillis": 2.8638126
+    }
+  ]
+}

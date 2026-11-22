@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "indexBase": 0,
+  "name": "cyclic_3x3.csv",
+  "size": 3,
+  "inputFile": "/home/yan-kovalenko/IdeaProjects/lab_1_5/experiments/reproduction/inputs/own/cyclic_3x3.csv",
+  "methods": [
+    "cosine"
+  ],
+  "matrix": [
+    [
+      1.0,
+      3.0,
+      0.3333333333333333
+    ],
+    [
+      0.3333333333333333,
+      1.0,
+      3.0
+    ],
+    [
+      3.0,
+      0.3333333333333333,
+      1.0
+    ]
+  ],
+  "originalMatrixCsv": "original_matrix.csv",
+  "initialMetrics": {
+    "ci": 0.6666666666666674,
+    "k": 0.962962962962963
+  },
+  "results": {
+    "cosine": {
+      "algorithm": "Kurennykh et al. (2018)",
+      "status": "TARGET_REACHED",
+      "detail": "Corrected CI is at or below the target",
+      "initialMetrics": {
+        "ci": 0.6666666666666674,
+        "k": 0.962962962962963
+      },
+      "finalMetrics": {
+        "ci": 2.220446049250313E-16,
+        "k": 0.0
+      },
+      "parameters": {
+        "targetCi": 0.1,
+        "maxIterations": 100,
+        "minimumCiDecrease": 1.0E-12,
+        "minimumSupportCosine": 0.0,
+        "minimumComparison": 4.9E-324,
+        "maximumComparison": 1.7976931348623157E308
+      },
+      "iterations": 1,
+      "changedComparisons": 1,
+      "elapsedMillis": 0.196835,
+      "matrix": [
+        [
+          1.0,
+          3.0,
+          0.3333333333333333
+        ],
+        [
+          0.3333333333333333,
+          1.0,
+          0.1111111111111111
+        ],
+        [
+          3.0,
+          9.0,
+          1.0
+        ]
+      ],
+      "matrixCsv": "cosine_corrected.csv",
+      "history": [
+        {
+          "iteration": 1,
+          "i": 1,
+          "k": 2,
+          "via": 0,
+          "oldValue": 3.0,
+          "newValue": 0.1111111111111111,
+          "delta": -2.888888888888889,
+          "comparisonCosine": 0.4285714285714284,
+          "supportCosine": 0.42857142857142844,
+          "ciBefore": 0.6666666666666674,
+          "ciAfter": 2.220446049250313E-16,
+          "kBefore": 0.962962962962963,
+          "kAfter": 0.0
+        }
+      ]
+    }
+  }
+}

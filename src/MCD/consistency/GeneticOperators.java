@@ -43,10 +43,17 @@ final class GeneticOperators {
         }
         for (int attempt = 1; attempt <= options.maxMutationAttempts(); attempt++) {
             int gene = random.nextInt(parent.length());
+            // No extra RNG draw in UPPER_ONLY: old seeded trajectories are preserved.
+            // Uniform independent pair + fair orientation = uniform ordered i != j.
+            boolean lower = options.mutationMode() == GeneticMutationMode.BIDIRECTIONAL && random.nextBoolean();
+            double old = lower ? parent.lowerGene(gene) : parent.gene(gene);
             // Java's half-open uniform interval [-0.5, 0.5); no uncontrolled randomness.
             double delta = random.nextDouble() - 0.5;
-            double updated = parent.gene(gene) + delta;
-            if (updated != parent.gene(gene) && options.acceptsGene(updated)) {
+            double oriented = old + delta;
+            // Mutate the LOWER value itself, then recover the stored upper gene.
+            double updated = lower ? 1 / oriented : oriented;
+            if (oriented != old && oriented > 0 && options.contains(oriented)
+                    && updated != parent.gene(gene) && options.acceptsGene(updated)) {
                 double[] genes = parent.genes();
                 genes[gene] = updated;
                 return new Mutation(GeneticChromosome.fromGenes(parent.size(), genes), true, attempt);
@@ -65,6 +72,26 @@ final class GeneticOperators {
                 return true;
             }
             if (value + (Math.nextDown(1.0) - 0.5) > value && options.acceptsGene(Math.nextUp(value))) {
+                return true;
+            }
+            if (options.mutationMode() == GeneticMutationMode.BIDIRECTIONAL
+                    && lowerMutationPossible(chromosome.lowerGene(gene), value, options)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private static boolean lowerMutationPossible(double lower, double upper, GeneticCorrectionOptions options) {
+        // Feasibility witnesses only, NOT clipping a mutation proposal. Reciprocal
+        // bounds and floating-point rounding can make adjacent lower values map
+        // to the same upper value, so inspect both ends of the reachable interval.
+        double low = Math.max(lower - 0.5, Math.max(options.minimumComparison(), 1 / options.maximumComparison()));
+        double high = Math.min(lower + (Math.nextDown(1.0) - 0.5),
+                Math.min(options.maximumComparison(), 1 / options.minimumComparison()));
+        for (double candidate : new double[] {low, Math.nextUp(low), high, Math.nextDown(high)}) {
+            if (candidate >= low && candidate <= high && candidate != lower && candidate > 0
+                    && options.contains(candidate) && 1 / candidate != upper && options.acceptsGene(1 / candidate)) {
                 return true;
             }
         }

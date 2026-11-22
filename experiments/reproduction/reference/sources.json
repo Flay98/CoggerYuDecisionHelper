@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "origin": "MANUAL_TRANSCRIPTION_FROM_ORIGINAL_PUBLICATIONS",
+  "sayadi2026": {
+    "doi": "10.1016/j.ijar.2026.109626",
+    "pdfFile": "1-s2.0-S0888613X26000022-main.pdf",
+    "pdfSha256": "68b07d210868c092a957fbb915b23344f9fca10b4c003762caed59924c85dbd2",
+    "printedPages": [7, 8],
+    "reportedInitialK": 0.55,
+    "reportedCorrectedK": 0.2317,
+    "reportedGenerations": 2,
+    "ciForExamplePublished": false,
+    "randomSeedPublished": false,
+    "specificCrossoverOperatorDefined": false,
+    "mutationIndexRestriction": "i != j; not restricted to i < j",
+    "scaleInDescription": "[1/7, 7]",
+    "exampleContains": [8, 9]
+  },
+  "kurennykh2018": {
+    "doi": "10.20948/prepr-2018-196",
+    "pdfFile": "ipmp2555.pdf",
+    "pdfSha256": "00659b8b9241710f25ff59ec0622b2e8473ea6c3b66fbae85261340efd7f9cd5",
+    "algorithmPrintedPages": [8, 9, 10, 11],
+    "table1PrintedPage": 12,
+    "reportedMatrixCount": 1000,
+    "reportedSizeRange": [3, 10],
+    "originalMatricesProvided": false,
+    "randomSeedProvided": false,
+    "exactRandomGeneratorProvided": false,
+    "exampleOfScaleOverflow": {"a_ij": 2, "a_jk": 5, "product": 10},
+    "table1File": "kurennykh_2018_table1.csv",
+    "illustrative3x3IsAnAuthorExample": false
+  }
+}

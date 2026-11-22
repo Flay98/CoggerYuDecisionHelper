@@ -1,0 +1,8 @@
+{
+  "schemaVersion": 1,
+  "experimentId": "K2018_OWN_ILLUSTRATIVE_3",
+  "origin": "OWN_INDEPENDENT_CHECK_NOT_AUTHOR_DATA",
+  "inputFile": "inputs/own/illustrative_3x3.csv",
+  "inputSha256": "0afbf4dedf64223fa6f4ceffb799c22703a97ec3f6651ae0f3a55ac39970c269",
+  "resultFile": "outputs/2018_own/K2018_OWN_ILLUSTRATIVE_3/result.json"
+}

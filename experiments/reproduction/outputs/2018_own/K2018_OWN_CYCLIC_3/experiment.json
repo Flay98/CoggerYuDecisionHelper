@@ -1,0 +1,8 @@
+{
+  "schemaVersion": 1,
+  "experimentId": "K2018_OWN_CYCLIC_3",
+  "origin": "OWN_INDEPENDENT_CHECK_NOT_AUTHOR_DATA",
+  "inputFile": "inputs/own/cyclic_3x3.csv",
+  "inputSha256": "524f9201858512bf7dea22613f733da695acda9c1ac75ff7b652fd69f1fb33b7",
+  "resultFile": "outputs/2018_own/K2018_OWN_CYCLIC_3/result.json"
+}
