@@ -24,3 +24,10 @@ __pycache__/
 *.tmp
 *.swp
 *~
+
+# Stage 8: compact generated matrix/history archives and preliminary figures
+/experiments/kurennykh2018/inputs/SMOKE/
+/experiments/kurennykh2018/inputs/REPORT/
+/experiments/kurennykh2018/outputs/
+/experiments/kurennykh2018/figures/SMOKE/
+/experiments/kurennykh2018/summary/**/runs.partial.csv

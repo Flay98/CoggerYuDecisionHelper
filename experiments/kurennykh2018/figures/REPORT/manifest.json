@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "profile": "REPORT",
+  "planSha256": "eb18026d9e37cda4980193faf7de6597adeebb3558396c3a2f153cb7dceb466b",
+  "figures": [
+    {
+      "name": "01_iterations",
+      "sources": [
+        "summary/REPORT/aggregated.csv",
+        "summary/REPORT/comparison_with_article.csv"
+      ],
+      "note": "Авторский подсчёт «варьируемых элементов» не полностью определён",
+      "png": "figures/REPORT/01_iterations.png",
+      "svg": "figures/REPORT/01_iterations.svg"
+    },
+    {
+      "name": "02_delta_ci",
+      "sources": [
+        "summary/REPORT/aggregated.csv",
+        "summary/REPORT/comparison_with_article.csv"
+      ],
+      "note": "Формула совпадает; исходная авторская выборка и генератор неизвестны",
+      "png": "figures/REPORT/02_delta_ci.png",
+      "svg": "figures/REPORT/02_delta_ci.svg"
+    },
+    {
+      "name": "03_time",
+      "sources": [
+        "summary/REPORT/aggregated.csv",
+        "summary/REPORT/comparison_with_article.csv"
+      ],
+      "note": "Только описательно: разные язык, оборудование, JIT и методика",
+      "png": "figures/REPORT/03_time.png",
+      "svg": "figures/REPORT/03_time.svg"
+    },
+    {
+      "name": "04_squared_error",
+      "sources": [
+        "summary/REPORT/aggregated.csv",
+        "summary/REPORT/comparison_with_article.csv"
+      ],
+      "note": "Одинаковая формула; сравниваются разные исходные выборки",
+      "png": "figures/REPORT/04_squared_error.png",
+      "svg": "figures/REPORT/04_squared_error.svg"
+    },
+    {
+      "name": "05_variation",
+      "sources": [
+        "summary/REPORT/aggregated.csv",
+        "summary/REPORT/comparison_with_article.csv"
+      ],
+      "note": "ОПИСАТЕЛЬНО: наша V_upper; формула и знаменатель авторов не указаны",
+      "png": "figures/REPORT/05_variation.png",
+      "svg": "figures/REPORT/05_variation.svg"
+    },
+    {
+      "name": "06_original_best_rank",
+      "sources": [
+        "summary/REPORT/groups.csv",
+        "summary/REPORT/comparison_with_article.csv"
+      ],
+      "note": "РАЗНЫЕ ЕДИНИЦЫ: авторские проценты не вычисляются без N на размерность",
+      "png": "figures/REPORT/06_original_best_rank.png",
+      "svg": "figures/REPORT/06_original_best_rank.svg"
+    },
+    {
+      "name": "07_success",
+      "sources": [
+        "summary/REPORT/groups.csv"
+      ],
+      "note": "Первоначально приемлемые МПС входят только в первую кривую",
+      "png": "figures/REPORT/07_success.png",
+      "svg": "figures/REPORT/07_success.svg"
+    },
+    {
+      "name": "08_ci_before_after",
+      "sources": [
+        "summary/REPORT/aggregated.csv"
+      ],
+      "note": "ДИ — CLT-приближение; средний CI не равен доле успешных коррекций",
+      "png": "figures/REPORT/08_ci_before_after.png",
+      "svg": "figures/REPORT/08_ci_before_after.svg"
+    }
+  ],
+  "matplotlibVersion": "3.10.8",
+  "numpyVersion": "2.3.5",
+  "sourceSha256": {
+    "summary/REPORT/runs.csv": "f0024f72d09e50b7e7ceada0dedfca9a03b11383339716a6929fda38bf39bec6",
+    "summary/REPORT/aggregated.csv": "26ab41e8e2e4a16063461ace1d032d188a8efa91eeb2304be84e2e8b52f4db0f",
+    "summary/REPORT/groups.csv": "aa04e88ef760a5c72f0d4c4f39a764ee9f078dc0085f760712698b0a88eb878c",
+    "summary/REPORT/comparison_with_article.csv": "c83fc8e1749f6f791ff10a6eb4b998fd794cef2a4d10f6ff85999df06a713c95"
+  }
+}

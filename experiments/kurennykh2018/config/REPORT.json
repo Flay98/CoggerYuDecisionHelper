@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1, "profile": "REPORT", "sizes": [3,4,5,6,7,8,9,10],
+  "matricesPerSize": 1000, "masterSeed": 2018196, "maxCorrections": 100,
+  "targetCi": 0.1, "minimumComparison": 0.1111111111111111, "maximumComparison": 9.0,
+  "warmupPerSize": 10, "maxWallSeconds": 7200, "runTimeoutSeconds": 120,
+  "maxArchiveBytes": 536870912, "generator": "DISCRETE_EXPERT",
+  "primarySquaredDeviation": "E_FULL_FORMULA_11", "primaryVariation": "V_UPPER",
+  "weightMethod": "EXISTING_PERRON_RIGHT_EIGENVECTOR",
+  "tieRule": "EXACT_DOUBLE_TIES_LOWEST_ORIGINAL_INDEX_ORDINAL_RANKS",
+  "meanConfidenceInterval": "NORMAL_CLT_95_Z_1.959963984540054",
+  "authorSampleSizePerDimension": null
+}

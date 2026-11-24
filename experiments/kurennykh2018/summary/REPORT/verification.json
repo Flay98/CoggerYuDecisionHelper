@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "junit": {
+    "tests": 230,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "verifiedReportMatrices": 8000,
+  "verifiedSmokeMatrices": 40,
+  "matchedInputPrefixMatrices": 40,
+  "matrixGeneratorVersion": "matrix-generator-v1",
+  "previousResearchFilesPreservedByteExact": 371,
+  "unchangedMathematicalAndCliSourcesSha256": {
+    "src/MCD/consistency/ConsistencyMetrics.java": "5236952d1ab551880b64b6612ba6a14344312429a87525d8c2c0623a7f5b47b1",
+    "src/MCD/consistency/CosineConsistencyCorrector.java": "fe7025e6a3653b435a651f3fb66f7f4f42d0407582025cb0a7ea2e7794713626",
+    "src/MCD/consistency/CosineCorrectionOptions.java": "85fa5b80a474b10bf32330624d9e962b7198e51ca7708bfaef37668367067641",
+    "src/MCD/consistency/CosineCorrectionResult.java": "37935ec90b6925a1c63241df5f8726a09c43c1f54910db243feeafc4168a73c3",
+    "src/MCD/consistency/GeneticChromosome.java": "c99e6ae766941ca615f2ce201bc84e80f0e41c7873011ef137e6f592461eb147",
+    "src/MCD/consistency/GeneticConsistencyCorrector.java": "c82991aaab7f29f8adc3aa2b0ecbbb37730c80469c6a327bc5b2c09e96094383",
+    "src/MCD/consistency/GeneticCorrectionOptions.java": "506c53b73b10c48fb5b9cd07ef1d4d60b9278ae5b06edbaad26e008b82233fa2",
+    "src/MCD/consistency/GeneticCorrectionResult.java": "017335cbca78bf1b0522ac0568ac6676e6011422c2c846c7ca5d8d2dee8c1bde",
+    "src/MCD/consistency/GeneticMutationMode.java": "2e5b08467a0fd62b67b9160ba4478fe9062135158c5a3cbbf33dd338b90b2a53",
+    "src/MCD/consistency/GeneticOperators.java": "b57a0ea23dccdc605b5911a152d5c9626f66bbd9c150afca627b03936dca8c01",
+    "src/MCD/consistency/KoczkodajResult.java": "c2641c256d51420cf03a244449f55c805589a04f2fe38db6a002513ffd945250",
+    "src/MCD/consistency/NumericalSupport.java": "1db27a018ed8870a85254efeca3d76ebd857b9f50bb93aa6e9097c01330fba2d",
+    "src/MCD/consistency/PairwiseComparisonMatrix.java": "64401a338b8e6e5fbf889436ead7b47458bc57fe3351357d2b3797e5a833a265",
+    "src/MCD/consistency/RowCosines.java": "ef57443025fec0d172c56bf0500a7966680bf565a4b4333d35b0d13d27e7bd3a",
+    "src/MCD/consistency/cli/AnalysisResult.java": "fb74411208c16cea378da74a9c6983c21031346521750b47ccf448bc9b88e9ee",
+    "src/MCD/consistency/cli/AnalysisRunner.java": "cb202b4195c1d3fd9dba175608ff6213a305a3adaecfa1e5fdc8e157bda944de",
+    "src/MCD/consistency/cli/CliArguments.java": "2997a9ec635ea52ab195393cb4618026f4d9777d164cb86b4ad0df8a4e963ba9",
+    "src/MCD/consistency/cli/CliOptions.java": "cd24266dc23d0b52c8a1e3ecd7dc7071953868a0f9377c28497c1d3ea09c84a2",
+    "src/MCD/consistency/cli/ConsistencyCli.java": "661985a5c45c5d79fe947449512b0f15d265534781301805fca0c231c2d09f84",
+    "src/MCD/consistency/cli/ConsoleReport.java": "8d481b19625366fc5e2993f510165e690ea8b98bc8f3e549efa4b62074fa8d42",
+    "src/MCD/consistency/cli/CsvMatrixReader.java": "bb6fe3cb208c234dc68e90f5a218ef388f4f13615cc2a272941433730845bba6",
+    "src/MCD/consistency/cli/JsonMatrixReader.java": "cd9a8933ccd406a4d540fd6600df045a302bbce693cc8bef3208a96acbc07c19",
+    "src/MCD/consistency/cli/MatrixFileReader.java": "a65312ac2e1a74e4b73cbf528bcf15cbc7085007f28aebe873d8f6675e01093f",
+    "src/MCD/consistency/cli/MatrixInput.java": "673f95027c039f677b31e146078e88bcef145e79124c204c2fea52d316436dbf",
+    "src/MCD/consistency/cli/ResultJson.java": "267696c9bf7e0dcba94e556b8e85459bf9a22de776325ca566b89fa659784ee2",
+    "src/MCD/consistency/cli/ResultWriter.java": "923e9a809374f53383a1c64b73a8405ba27a1f6379ef24d4874062e00c69b529",
+    "src/MCD/consistency/decision/AlternativeTable.java": "625babc7d499ec93c0322535e36331ade225902b123aedf203998eda2322782a",
+    "src/MCD/consistency/decision/AlternativesReader.java": "d63bf3761d4ad57ee2bdcca8059fb1882b59ed1742b6bcde7c52dad5ead1a92d",
+    "src/MCD/consistency/decision/DecisionAnalysis.java": "bc318ca087b0fd436822fe88a9d4201c272ce57980cdba064187cc5bbc627998",
+    "src/MCD/consistency/decision/DecisionArguments.java": "af3299a575d0f685ea0f7454ece05ab6aabc22b46de1fb093c3ac5e38b2e2f66",
+    "src/MCD/consistency/decision/DecisionCli.java": "c91866e030951117d9381b157da291651249fd100ea4be17e5285254b341baf7",
+    "src/MCD/consistency/decision/DecisionConsoleReport.java": "3fcc44d0fc3f5575f7b9b00c57aea09b04fe4e5e6bedd525564a88cebb2d45ac",
+    "src/MCD/consistency/decision/DecisionJson.java": "b1182efcacd4089eb050da0f5c82c84afe3fe4b3d4f8b81fdec28d2af4b60af4",
+    "src/MCD/consistency/decision/DecisionRunner.java": "24367694899f427a475041aace08fb4a12b03b7483e1841b36638677385d1bc0",
+    "src/MCD/consistency/decision/DecisionWriter.java": "a9384ca619d920ac9a077fc1ca68e702bc2ae31711f27a354421fab8bfc21fc8",
+    "src/MCD/consistency/decision/Direction.java": "0218a1a68cd5b2fc1f2dc08080f3e2be946f873120a558d5b2b7e32b25858741",
+    "src/MCD/consistency/decision/PerronWeights.java": "4e71f08e0c066c846531e033ab9f75dfa2bbe5210ac55b005223abc2fbb9c288",
+    "src/MCD/consistency/decision/WeightedRanking.java": "ca081801867feb2e60f1688c4aac01ec3d42aa6e7175d5b0f5fb1d21b3016d4b",
+    "src/MCD/consistency/experiments/BenchmarkEnvironment.java": "03a9c4dd455be9053832a5d0ed3631b7e4352d23892b50b7c5f9c62fc2bf9f8a",
+    "src/MCD/consistency/experiments/BenchmarkProfile.java": "4961145485b40eb13d2d4abcce30610ae93bb920d537963f9c6ed5e7ecc6c3e8",
+    "src/MCD/consistency/experiments/BenchmarkRunner.java": "fcc00b7d39da533665a7aaa82769af252e57731bf04a6febb56ce653774f390b",
+    "src/MCD/consistency/experiments/BenchmarkStatistics.java": "4fde2163593ca2f8c997bb6853558e03a9b904e8bbfd2571776dd4b67ebc2698",
+    "src/MCD/consistency/experiments/BenchmarkVerifier.java": "2715b70f94d40def55c5fb894615e273d8713cde8bb86939f23bdf5af8ceff45",
+    "src/MCD/consistency/experiments/ExperimentFiles.java": "560da768f69e22cc4e1204d52d02e40440515b7daa3ca389514685ef115ecc17",
+    "src/MCD/consistency/experiments/ExperimentPlan.java": "0cf0eb134fdf0608977bbfed9e856209313158afbdf4f046dd63ffe33bb44631",
+    "src/MCD/consistency/experiments/InputRepository.java": "d1f9a5df2f261398fc5c6daf6b1d0a6671efdebeb05c27b46f7d1c5770a78c7e",
+    "src/MCD/consistency/experiments/MatrixGenerator.java": "550567147f0e81ecd9527b71e79bda67595bc3e1c436ecde317dc45581f874ac",
+    "src/MCD/consistency/experiments/ResearchMetrics.java": "00d9227a7c45a48e2d7afa6ce78464eaafdcfd40fd5eb629b3252f0c0ad8a30a",
+    "src/MCD/consistency/experiments/RunRecord.java": "6833f897767e54a0533dc71036a742fe376d3aafa684773c72a38763c45a77e5",
+    "src/MCD/consistency/reproduction/ArticleReproduction.java": "1a590a7718e74af91ff20ea0ac20fbbecba58545f3c6e95d34cbbcdc649a940f",
+    "src/MCD/consistency/reproduction/PublishedReferences.java": "32f1f981783509eaa7acb1a9925cd0d59b7a74e417511531686a4ab3660ab5f0",
+    "src/MCD/consistency/reproduction/ReproductionPlan.java": "a74ec662ad1ac2e9c5ccb2cab8b63f789e307f7425e5646f85c1bf71d0de7e10",
+    "src/MCD/consistency/reproduction/ReproductionSummary.java": "d083bca5b20d9b5e3951a2ec4686d64bf9d4d08e94ae955bd95f668892a93481",
+    "src/MCD/consistency/reproduction/SavedResultVerifier.java": "8dcf0272cf3963a5c8c8dbc27a5ae0f83b5d10f4315c0dd70664a836805b510d"
+  },
+  "referenceSha256": "c291a1817a2c9ede3ce9b818f6b26c78cd1da7043f6da07dd8a8bc956fb0bfba",
+  "localSourcePdfSha256": "00659b8b9241710f25ff59ec0622b2e8473ea6c3b66fbae85261340efd7f9cd5",
+  "reportedTableTranscriptionVerifiedVisually": true,
+  "reportWallSeconds": 84.225968343,
+  "reportInputArchiveBytes": 944528,
+  "reportOutputArchiveBytes": 18074656,
+  "checkedCommands": [
+    {
+      "command": "./gradlew clean build",
+      "result": "SUCCESS"
+    },
+    {
+      "command": "./gradlew reproduceKurennykhSmoke",
+      "result": "SUCCESS"
+    },
+    {
+      "command": "./gradlew reproduceKurennykh2018",
+      "result": "SUCCESS"
+    },
+    {
+      "command": "./gradlew verifyKurennykh2018",
+      "result": "SUCCESS"
+    },
+    {
+      "command": "./gradlew plotKurennykh2018",
+      "result": "SUCCESS"
+    },
+    {
+      "command": "./gradlew compareKurennykh2018",
+      "result": "SUCCESS"
+    },
+    {
+      "command": "git diff --check",
+      "result": "SUCCESS"
+    }
+  ],
+  "previousCompatibilityChecks": {
+    "runConsistency": "SUCCESS, isolated output",
+    "runDecision": "SUCCESS, isolated output",
+    "reproduceArticles": "SUCCESS, isolated input/reference copies and outputs",
+    "runBenchmarkSmoke": "SUCCESS, isolated root",
+    "previousPlotScript": "SUCCESS, isolated root",
+    "originalMain": "SUCCESS, input 1 exits"
+  },
+  "allFailuresIncluded": true,
+  "authorPercentagesNotInferred": true,
+  "planNotAdjustedAfterOutcomes": true,
+  "gitCommitCreated": false
+}

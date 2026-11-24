@@ -18,14 +18,14 @@ import java.util.HexFormat;
 import java.util.List;
 
 /** Files and fixed-schema reproduction DTOs; does not implement any correction method. */
-final class ReproductionFiles {
+public final class ReproductionFiles {
     private static final Gson GSON = new GsonBuilder().setStrictness(Strictness.STRICT)
             .setPrettyPrinting().serializeNulls().disableHtmlEscaping().create();
 
     private ReproductionFiles() {
     }
 
-    static JsonObject readJson(Path path) throws IOException {
+    public static JsonObject readJson(Path path) throws IOException {
         try (JsonReader reader = new JsonReader(Files.newBufferedReader(path, StandardCharsets.UTF_8))) {
             reader.setStrictness(Strictness.STRICT);
             var json = JsonParser.parseReader(reader);
@@ -36,12 +36,12 @@ final class ReproductionFiles {
         }
     }
 
-    static void writeJson(Path path, Object fixedSchemaData) throws IOException {
+    public static void writeJson(Path path, Object fixedSchemaData) throws IOException {
         Files.createDirectories(path.getParent());
         Files.writeString(path, GSON.toJson(fixedSchemaData) + "\n", StandardCharsets.UTF_8);
     }
 
-    static String sha256(Path path) throws IOException {
+    public static String sha256(Path path) throws IOException {
         try {
             return HexFormat.of().formatHex(MessageDigest.getInstance("SHA-256").digest(Files.readAllBytes(path)));
         } catch (NoSuchAlgorithmException error) {
@@ -49,7 +49,7 @@ final class ReproductionFiles {
         }
     }
 
-    static void writeCsv(Path path, List<List<String>> rows) throws IOException {
+    public static void writeCsv(Path path, List<List<String>> rows) throws IOException {
         StringBuilder text = new StringBuilder();
         for (List<String> row : rows) {
             text.append(String.join(",", row.stream().map(ReproductionFiles::csvCell).toList())).append('\n');
@@ -63,7 +63,7 @@ final class ReproductionFiles {
                 ? "\"" + value.replace("\"", "\"\"") + "\"" : value;
     }
 
-    static void require(boolean condition, String message) {
+    public static void require(boolean condition, String message) {
         if (!condition) {
             throw new IllegalStateException(message);
         }

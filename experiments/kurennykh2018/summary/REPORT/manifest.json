@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "profile": "REPORT",
+  "status": "COMPLETE",
+  "planSha256": "eb18026d9e37cda4980193faf7de6597adeebb3558396c3a2f153cb7dceb466b",
+  "expectedMatrices": 8000,
+  "completedMatrices": 8000,
+  "warmups": 80,
+  "wallSeconds": 84.225968343,
+  "inputArchive": "inputs/REPORT/matrices.jsonl.gz",
+  "outputArchive": "outputs/REPORT/results.jsonl.gz",
+  "inputArchiveSha256": "145d26d52c9acb46f314ae5ff5b2d76569e1873bfba1409a2540871d28fbf4bd",
+  "outputArchiveSha256": "e7460ac436f3d3f83f02d1b6dbc3d82367fcf84ecd34ee541a15d3381538f731",
+  "referenceSha256": "c291a1817a2c9ede3ce9b818f6b26c78cd1da7043f6da07dd8a8bc956fb0bfba",
+  "protocolSha256": "1902b7292a301fd4b757f017b1747f4db1c5224026dfd513ab956e4657982374",
+  "failureId": null,
+  "failureReason": null
+}

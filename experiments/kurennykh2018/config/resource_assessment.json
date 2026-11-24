@@ -1,0 +1,17 @@
+{
+  "basis": "SMOKE with identical standard corrector parameters; maximum measured time per size, doubled",
+  "maximumMillisPerSize": {
+    "3": 0.112678,
+    "4": 0.362374,
+    "5": 0.741503,
+    "6": 1.522402,
+    "7": 3.059805,
+    "8": 11.149928,
+    "9": 27.744113,
+    "10": 96.327569
+  },
+  "conservativeAlgorithmSeconds": 282.04074399999996,
+  "reportMatrices": 8000,
+  "planUnchanged": true,
+  "reportConfigSha256": "ea174a52f8877c1d34402ff37a5016c198ce6e272f76a88b77f71c34140160b1"
+}

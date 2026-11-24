@@ -124,3 +124,24 @@ tasks.register<JavaExec>("runDecision") {
     maxHeapSize = "512m"
     systemProperty("file.encoding", "UTF-8")
 }
+
+fun kurennykhTask(taskName: String, entry: String, profile: String) = tasks.register<JavaExec>(taskName) {
+    group = "experiments"
+    description = "Kurennykh 2018 approximate reproduction: $profile / $entry"
+    dependsOn(tasks.classes)
+    classpath = sourceSets["main"].runtimeClasspath
+    mainClass = "MCD.consistency.reproduction.kurennykh.$entry"
+    args(profile)
+    maxHeapSize = "512m"
+    systemProperty("file.encoding", "UTF-8")
+}
+kurennykhTask("reproduceKurennykhSmoke", "KurennykhReproduction", "SMOKE")
+kurennykhTask("reproduceKurennykh2018", "KurennykhReproduction", "REPORT")
+kurennykhTask("verifyKurennykh2018", "KurennykhVerifier", "REPORT")
+kurennykhTask("compareKurennykh2018", "KurennykhComparison", "REPORT")
+tasks.register<Exec>("plotKurennykh2018") {
+    group = "experiments"
+    description = "Plot saved Kurennykh results without running the correction algorithm"
+    val python = file("experiments/comparison/.venv/bin/python")
+    commandLine(if (python.exists()) python.absolutePath else "python3", "experiments/kurennykh2018/scripts/plot_results.py")
+}

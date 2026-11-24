@@ -7,6 +7,13 @@ The repository presents calculation of optimal alternatives in multicriteria tas
 [методика, схема результатов и контрольные числа](docs/DECISION.md).
 Инструкции исходной программы и сведения об авторстве сохранены ниже.
 
+Дополнительное исследование статьи 2018 года на 8000 собственных МПС:
+[протокол и воспроизведение](experiments/kurennykh2018/README.md),
+[результаты и сопоставление с таблицей 1](experiments/kurennykh2018/summary/REPORT/report.md).
+Команды: `reproduceKurennykhSmoke`, `reproduceKurennykh2018`,
+`verifyKurennykh2018`, `plotKurennykh2018`. Тяжёлый профиль не входит в build/test;
+точное совпадение авторских чисел не заявляется, прежние алгоритмы не менялись.
+
 The project is completed during the Descision Making course at SPbPU Institute of Computer Science and Cybersecurity (SPbPU ICSC).
 
 # Persons
